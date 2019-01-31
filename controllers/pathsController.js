@@ -2,12 +2,7 @@ const db = require("../models");
 
 module.exports = {
   findAll: function(req, res) {
-    console.log("+++++++++")
-    console.log(db.Path);
-
-    db.Path.findAll({
-      attributes: ["name", "image", "description"]
-    })
+    db.Path.findAll({})
     .then(allData => {
       console.log("+=========+");
       console.log(allData);
