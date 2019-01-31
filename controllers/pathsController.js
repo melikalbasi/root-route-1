@@ -1,0 +1,10 @@
+const db = require("../models");
+
+// Defining methods for the booksController
+module.exports = {
+  findAll: function(req, res) {
+    db.Path.findAll({})
+    .then(allData => res.json(allData))
+      .catch(err => res.status(422).json(err));
+  }
+};
