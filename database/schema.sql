@@ -5,5 +5,7 @@ CREATE TABLE paths (
     name VARCHAR(100),
     description VARCHAR(500),
     image VARCHAR(500),
+    createdAt VARCHAR(500),
+    updatedAt VARCHAR(500),
     PRIMARY KEY (id)
 );

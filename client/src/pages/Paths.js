@@ -34,8 +34,9 @@ class Paths extends Component {
                         {path.name}
                       </h2>
                       <p>
-                          {path.description}
+                        {path.description}
                       </p>
+                      <img src={path.image} alt={path.name} style={{height: 50}}></img>
                     </Link>
                   </ListItem>
                 ))}
