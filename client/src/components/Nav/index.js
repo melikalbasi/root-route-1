@@ -3,7 +3,7 @@ import React from "react";
 function Nav() {
   return (
     <nav className="navbar">
-      <a className="navbar-brand" href="/">
+      <a href="/">
         Root Route
       </a>
     </nav>

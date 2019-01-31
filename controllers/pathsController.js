@@ -1,12 +1,17 @@
 const db = require("../models");
 
-// Defining methods for the booksController
 module.exports = {
   findAll: function(req, res) {
-    db.Path.findAll({})
+    console.log("+++++++++")
+    console.log(db.Path);
+
+    db.Path.findAll({
+      attributes: ["name", "image", "description"]
+    })
     .then(allData => {
-      console.log("Hitting the then statement");
-      res.send(allData) 
+      console.log("+=========+");
+      console.log(allData);
+      res.json(allData) 
     })
       .catch(err => res.status(422).json(err));
   }

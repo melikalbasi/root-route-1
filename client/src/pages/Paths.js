@@ -28,14 +28,13 @@ class Paths extends Component {
             <Jumbotron>
               <h1>PATHS IN THE ROOT ROUTE</h1>
             </Jumbotron>
-            {this.state.paths.length ? (
               <List>
                 {this.state.paths.map(path => (
                   <ListItem key={path.id}>
                     <Link to={"/paths/" + path.id}>
-                    <strong>
+                    <h2>
                         {path.name}
-                      </strong>
+                      </h2>
                       <p>
                           {path.description}
                       </p>
@@ -43,9 +42,6 @@ class Paths extends Component {
                   </ListItem>
                 ))}
               </List>
-            ) : (
-              <h3>No Results to Display</h3>
-            )}
       </div>
     );
   }

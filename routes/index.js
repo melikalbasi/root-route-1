@@ -1,7 +1,7 @@
 const path = require("path");
 const router = require("express").Router();
 const pathsController = require("../controllers/pathsController");
-
+// console.log("HItting ")
 router.route("/api/paths")
   .get(pathsController.findAll)
 
