@@ -22,8 +22,7 @@ CREATE TABLE subjects (
     createdAt VARCHAR(500),
     updatedAt VARCHAR(500),
     PRIMARY KEY (id),
-    pathid INT,
-    -- FOREIGN KEY (pathid) REFERENCES paths(pathid)
+    pathid INT
 );
 
 CREATE TABLE resources (
@@ -35,6 +34,5 @@ CREATE TABLE resources (
     createdAt VARCHAR(500),
     updatedAt VARCHAR(500),
     PRIMARY KEY (id),
-    subjectid INT,
-    -- FOREIGN KEY (subjectid) REFERENCES subjects(subjectid)
+    subjectid INT
 );
