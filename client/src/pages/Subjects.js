@@ -44,4 +44,4 @@ class Subject extends Component {
   }
 }
 
-export default Subjects;
+export default Subject;
