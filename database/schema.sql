@@ -4,6 +4,10 @@ CREATE DATABASE root_route_react;
 
 USE root_route_react;
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> d74a5ec59c352dae3f462f14576ff63952967fe4
 CREATE TABLE paths (
     id INT AUTO_INCREMENT NOT NULL,
     name VARCHAR(100),

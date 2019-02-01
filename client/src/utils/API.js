@@ -6,5 +6,8 @@ export default {
     return (
       axios.get("/api/paths")
     )
+  },
+  getSubjects: function(id) {
+    return axios.get("/api/paths/" + id);
   }
 };

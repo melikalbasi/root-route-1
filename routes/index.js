@@ -5,6 +5,13 @@ const pathsController = require("../controllers/pathsController");
 router.route("/api/paths")
   .get(pathsController.findAll)
 
+
+router.route("/api/paths/:id")
+  .get(pathsController.findSubjects)
+
+
+
+
 // If no API routes are hit, send the React app
 // router.use(function(req, res) {
 //   res.sendFile(path.join(__dirname, "../client/public/index.html"));

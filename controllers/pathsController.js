@@ -11,7 +11,7 @@ module.exports = {
   findSubjects: function(req, res) {
     db.Subject.findAll({
       where: {
-        pathId: 1
+        pathid: req.params.id
       }
     })
     .then(allData => {
