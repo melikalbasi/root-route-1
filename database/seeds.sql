@@ -28,3 +28,13 @@ VALUES ("Express", "Express is annoying", "https://cdn-images-1.medium.com/max/1
 
 INSERT INTO subjects (name, description, image, createdAt, updatedAt, pathid)
 VALUES ("React", "React is a mixed bag", "https://cdn-images-1.medium.com/max/1200/1*CSZxfOMlVsKsrMkqTxFiMQ.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 2);
+
+-- Seeds for HTML
+INSERT INTO resources (name, description, image, link, createdAt, updatedAt, subjectid)
+VALUES ("HTML for Noobs", "Start here", "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png", "https://blog.prototypr.io/a-little-introduction-to-html-2f82cd9f602c" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 1);
+
+INSERT INTO resources (name, description, image, link, createdAt, updatedAt, subjectid)
+VALUES ("Beginning HTML", "Try this", "https://udemy-images.udemy.com/course/750x422/59535_1f48_6.jpg", "https://blog.prototypr.io/a-little-introduction-to-html-2f82cd9f602c" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 1);
+
+INSERT INTO resources (name, description, image, link, createdAt, updatedAt, subjectid)
+VALUES ("HTML - A guide", "Oh my", "https://static.makeuseof.com/wp-content/uploads/2017/09/HTML-Effects-Featured-670x335.jpg", "https://blog.prototypr.io/a-little-introduction-to-html-2f82cd9f602c" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 1);

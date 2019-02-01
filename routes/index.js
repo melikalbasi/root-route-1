@@ -6,9 +6,11 @@ router.route("/api/paths")
   .get(pathsController.findAll)
 
 
-router.route("/api/paths/:id")
+router.route("/api/paths/:pathid")
   .get(pathsController.findSubjects)
 
+router.route("/api/paths/:pathid/subjects/:subjectid")
+  .get(pathsController.findResources)
 
 
 
