@@ -1,4 +1,9 @@
+DROP DATABASE IF EXISTS root_route_react;
+
 CREATE DATABASE root_route_react;
+
+USE root_route_react;
+
 
 CREATE TABLE paths (
     id INT AUTO_INCREMENT NOT NULL,
