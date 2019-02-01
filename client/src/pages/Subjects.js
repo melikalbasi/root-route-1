@@ -12,6 +12,7 @@ class Subject extends Component {
 
 
   componentDidMount() {
+    console.log(this.props.match.params.id)
     API.getSubjects(this.props.match.params.id)
       .then(res => this.setState({ subjects: res.data }))
       .catch(err => console.log(err));
@@ -27,7 +28,7 @@ class Subject extends Component {
               <List>
                 {this.state.subjects.map(subject => (
                   <ListItem key={subject.id}>
-                    <Link to={"/subjects/" + subject.id}>
+                    <Link to={"/paths/" + this.props.match.params.id + "/subjects/" + subject.id}>
                     <h2>
                         {subject.name}
                       </h2>
