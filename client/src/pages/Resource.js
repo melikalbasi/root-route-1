@@ -25,7 +25,7 @@ class Resource extends Component {
     return (
       <div>
             <Jumbotron>
-              <h1>SUBJECTS</h1>
+              <h1>RESOURCES</h1>
             </Jumbotron>
               <List>
                 {this.state.resources.map(resource => (
