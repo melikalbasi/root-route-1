@@ -7,5 +7,16 @@ module.exports = {
       res.json(allData) 
     })
       .catch(err => res.status(422).json(err));
+  },
+  findSubjects: function(req, res) {
+    db.Subject.findAll({
+      where: {
+        pathid: req.params.id
+      }
+    })
+    .then(allData => {
+      res.json(allData) 
+    })
+      .catch(err => res.status(422).json(err));
   }
 };
