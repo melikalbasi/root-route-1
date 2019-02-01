@@ -4,10 +4,13 @@ export default {
   // Gets all paths
   getPaths: function() {
     return (
-      axios.get("/api/paths")
+      axios.get(`/api/paths`)
     )
   },
-  getSubjects: function(id) {
-    return axios.get("/api/paths/" + id);
+  getSubjects: function(pathid) {
+    return axios.get(`/api/paths/${pathid}`);
+  },
+  getResources: function(pathid, subjectid) {
+    return axios.get(`/api/paths/${pathid}/subjects/${subjectid}`);
   }
 };
