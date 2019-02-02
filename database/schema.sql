@@ -4,7 +4,7 @@ CREATE DATABASE root_route_react;
 
 USE root_route_react;
 
-CREATE TABLE paths (
+CREATE TABLE Paths (
     id INT AUTO_INCREMENT NOT NULL,
     name VARCHAR(100),
     description VARCHAR(500),
@@ -14,7 +14,7 @@ CREATE TABLE paths (
     PRIMARY KEY (id)
 );
 
-CREATE TABLE subjects (
+CREATE TABLE Subjects (
     id INT AUTO_INCREMENT NOT NULL,
     name VARCHAR(100),
     description VARCHAR(500),
@@ -25,7 +25,7 @@ CREATE TABLE subjects (
     pathid INT
 );
 
-CREATE TABLE resources (
+CREATE TABLE Resources (
     id INT AUTO_INCREMENT NOT NULL,
     name VARCHAR(100),
     description VARCHAR(500),
