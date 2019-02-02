@@ -12,7 +12,6 @@ class Subject extends Component {
 
 
   componentDidMount() {
-    console.log(this.props.match.params.pathid)
     API.getSubjects(this.props.match.params.pathid)
       .then(res => 
         this.setState({ subjects: res.data })
