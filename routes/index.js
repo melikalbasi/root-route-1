@@ -5,7 +5,6 @@ const pathsController = require("../controllers/pathsController");
 router.route("/api/paths")
   .get(pathsController.findAll)
 
-
 router.route("/api/paths/:pathid")
   .get(pathsController.findSubjects)
 
