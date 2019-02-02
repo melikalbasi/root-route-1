@@ -2,15 +2,15 @@ import axios from "axios";
 
 export default {
   // Gets all paths
-  getPaths: function() {
+  getPaths: function () {
     return (
       axios.get(`/api/paths`)
     )
   },
-  getSubjects: function(pathid) {
+  getSubjects: function (pathid) {
     return axios.get(`/api/paths/${pathid}`);
   },
-  getResources: function(pathid, subjectid) {
+  getResources: function (pathid, subjectid) {
     return axios.get(`/api/paths/${pathid}/subjects/${subjectid}`);
   }
 };

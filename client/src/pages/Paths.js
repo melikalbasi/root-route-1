@@ -3,6 +3,7 @@ import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
 import { Link } from "react-router-dom";
 import { List, ListItem } from "../components/List";
+import Cards_paths from "../components/Cards/Cards_paths";
 
 class Paths extends Component {
   state = {
@@ -16,7 +17,9 @@ class Paths extends Component {
   loadPaths = () => {
     API.getPaths()
       .then(allData =>
-        this.setState({ paths: allData.data}))
+        this.setState({ paths: allData.data}, () => {
+          console.log("paths", this.state.paths)
+        }))
       .catch(err => console.log(err));
   };
 
@@ -26,21 +29,12 @@ class Paths extends Component {
             <Jumbotron>
               <h1>PATHS IN THE ROOT ROUTE</h1>
             </Jumbotron>
-              <List>
+              {/* <List style={{height:"1000px"}}> */}
                 {this.state.paths.map(path => (
-                  <ListItem key={path.id}>
-                    <Link to={"/paths/" + path.id}>
-                    <h2>
-                        {path.name}
-                      </h2>
-                      <p>
-                        {path.description}
-                      </p>
-                      <img src={path.image} alt={path.name} style={{height: 50}}></img>
-                    </Link>
-                  </ListItem>
+                  <Cards_paths path = {path}></Cards_paths>
+                  
                 ))}
-              </List>
+              {/* </List> */}
       </div>
     );
   }
