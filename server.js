@@ -19,3 +19,7 @@ db.sequelize.sync({ force: false }).then(function() {
     console.log(`App listening on PORT ${PORT} -- http://localhost:${PORT}/`);
   });
 });
+
+
+// morgan-body
+// FOr tracking HTTP requests

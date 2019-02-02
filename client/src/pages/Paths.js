@@ -16,10 +16,9 @@ class Paths extends Component {
 
   loadPaths = () => {
     API.getPaths()
-      .then(allData =>
-        this.setState({ paths: allData.data}, () => {
-          console.log("paths", this.state.paths)
-        }))
+      .then(allData => {
+        this.setState({ paths: allData.data})
+      })
       .catch(err => console.log(err));
   };
 
