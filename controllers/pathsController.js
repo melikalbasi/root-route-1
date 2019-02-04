@@ -6,8 +6,7 @@ module.exports = {
     db.Path.findAll({})
     .then(allData => {
       res.json(allData) 
-    })
-      .catch(err => res.status(422).json(err));
+    }).catch(err => res.status(422).json(err));
   },
 
   // Find all subjects matching given subject id
@@ -16,11 +15,9 @@ module.exports = {
       where: {
         pathid: req.params.pathid
       }
-    })
-    .then(allData => {
+    }).then(allData => {
       res.json(allData) 
-    })
-      .catch(err => res.status(422).json(err));
+    }).catch(err => res.status(422).json(err));
   },
 
   // Find all resources matching given subject id
@@ -29,15 +26,28 @@ module.exports = {
       where: {
         subjectid: req.params.subjectid
       }
-    })
-    .then(allData => {
+    }).then(allData => {
       res.json(allData) 
-    })
-      .catch(err => res.status(422).json(err));
+    }).catch(err => res.status(422).json(err));
   },
 
-  // addReview: function(req, res) {
+  submitReview: function(req, res) {
+    db.Review.create({
+      reviewContent: req.params.reviewContent,
+      resourceid: req.params.resourceid
+    }).then(allData => {
+      res.json(allData)
+    }).catch(err => res.status(422).json(err));
+  },
 
-  // }
+  getReviews: function(req, res) {
+    db.Review.findAll({
+      where: {
+        resourceid: req.params.resourceid
+      }
+    }).then(allData => {
+      res.json(allData) 
+    }).catch(err => res.status(422).json(err));
+  }
 
 };
