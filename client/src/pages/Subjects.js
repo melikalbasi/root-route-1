@@ -1,9 +1,7 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
-import { List, ListItem } from "../components/List";
-
+import SubjectCard from "../components/Cards/SubjectCard";
 
 class Subject extends Component {
   state = {
@@ -13,10 +11,7 @@ class Subject extends Component {
 
   componentDidMount() {
     API.getSubjects(this.props.match.params.pathid)
-      .then(res => 
-        this.setState({ subjects: res.data })
-        // console.log(res)
-        )
+      .then(res => this.setState({ subjects: res.data }))
       .catch(err => console.log(err));
   }
 
@@ -24,24 +19,16 @@ class Subject extends Component {
   render() {
     return (
       <div>
-            <Jumbotron>
-              <h1>SUBJECTS</h1>
-            </Jumbotron>
-              <List>
-                {this.state.subjects.map(subject => (
-                  <ListItem key={subject.id}>
-                    <Link to={"/paths/" + this.props.match.params.pathid + "/subjects/" + subject.id}>
-                    <h2>
-                        {subject.name}
-                      </h2>
-                      <p>
-                        {subject.description}
-                      </p>
-                      <img src={subject.image} alt={subject.name} style={{height: 50}}></img>
-                    </Link>
-                  </ListItem>
-                ))}
-              </List>
+        <Jumbotron>
+          <h1>Subjects</h1>
+        </Jumbotron>
+        {this.state.subjects.map(subject => (
+          <SubjectCard 
+            subject={subject}
+            link={`/paths/${this.props.match.params.pathid}`}
+          >
+          </SubjectCard>
+        ))}
       </div>
     );
   }
