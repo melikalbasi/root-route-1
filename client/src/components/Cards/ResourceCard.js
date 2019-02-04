@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import API from "../../utils/API";
+import ReviewCard from "./ReviewCard";
+import ReviewForm from "../Review"
 
 const style = {
     image: {
@@ -33,7 +35,8 @@ class ResourceCard extends Component {
             if (res.data.status === "error") {
                 throw new Error(res.data.message);
             }
-            this.setState({ reviews: res.data.message, error: "" });
+            console.log(res)
+            // this.setState({ reviews: res.data.message, error: "" });
         }).catch(err => this.setState({ error: err.message }));
     };
 
@@ -44,6 +47,14 @@ class ResourceCard extends Component {
                 <img src={this.state.image} alt={this.state.name} style={style.image}></img>
                 <p>{this.state.description}</p>
                 <Link to={`${this.state.innerLink}/resource/${this.state.id}`}>SEE MORE</Link>
+                {this.state.reviews.map(review => (
+                    <ReviewCard review={review} />
+                ))}
+                <ReviewForm
+                    handleFormSubmit={this.handleFormSubmit}
+                    handleInputChange={this.handleInputChange}
+                    reviewContent={this.state.reviewContent}
+                />
             </div>
         );
     }

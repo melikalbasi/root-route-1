@@ -6,8 +6,7 @@ module.exports = {
     db.Path.findAll({})
     .then(allData => {
       res.json(allData) 
-    })
-      .catch(err => res.status(422).json(err));
+    }).catch(err => res.status(422).json(err));
   },
 
   // Find all subjects matching given subject id
@@ -19,8 +18,7 @@ module.exports = {
     })
     .then(allData => {
       res.json(allData) 
-    })
-      .catch(err => res.status(422).json(err));
+    }).catch(err => res.status(422).json(err));
   },
 
   // Find all resources matching given subject id
@@ -32,12 +30,16 @@ module.exports = {
     })
     .then(allData => {
       res.json(allData) 
-    })
-      .catch(err => res.status(422).json(err));
+    }).catch(err => res.status(422).json(err));
   },
 
-  // addReview: function(req, res) {
-
-  // }
+  submitReview: function(req, res) {
+    db.Review.create({
+      reviewContent: req.params.reviewContent,
+      resourceid: req.params.resourceid
+    }).then(allData => {
+      res.json(allData)
+    }).catch(err => res.status(422).json(err));
+  }
 
 };

@@ -1,30 +1,11 @@
-import React, { Component } from "react";
-import Jumbotron from "../components/Jumbotron";
-import API from "../utils/API";
-import ResourceCard from "../components/Cards/ResourceCard";
-// import ReviewForm from "../components/Review/";
+import React from "react";
 
-class ReviewCard extends Component {
-  state = {
-    // contains all reviews associated with the card
-    reviews: [],
-  };
-
-  componentDidMount() {
-    API.getReviews(this.props.match.params.pathid, this.props.match.params.subjectid)
-      .then(res => this.setState({ resources: res.data }))
-      .catch(err => console.log(err));
-  }
-
-  render() {
+function ReviewCard(props) {
     return (
-      <div>
-          {this.state.reviews.map(review => (
-              console.log(review)
-          ))}
-      </div>
+        <div>
+            <p>Review #{props.review.id}: {props.review.reviewContent}</p>
+        </div>
     );
-  }
 }
 
 export default ReviewCard;
