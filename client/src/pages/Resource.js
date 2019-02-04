@@ -42,15 +42,14 @@ class Resource extends Component {
           <h1>RESOURCES</h1>
         </Jumbotron>
         {this.state.resources.map(resource => (
-          <div>
+      
             <ResourceCard 
               resource={resource}
               link={`/paths/${this.props.match.params.pathid}/subjects/${this.props.match.params.subjectid}`}
             >
-            
             </ResourceCard>
-            {/* <ReviewForm resource={resource}></ReviewForm> */}
-          </div>
+            // <ReviewForm resource={resource}></ReviewForm>
+        
         ))}
       </div>
     );
