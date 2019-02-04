@@ -25,7 +25,7 @@ class Resource extends Component {
           <h1>RESOURCES</h1>
         </Jumbotron>
         {this.state.resources.map(resource => (
-          <div>
+      
             <ResourceCard 
               resource={resource}
               innerLink={`/paths/${this.props.match.params.pathid}/subjects/${this.props.match.params.subjectid}`}

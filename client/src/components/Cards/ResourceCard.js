@@ -5,8 +5,25 @@ import ReviewCard from "./ReviewCard";
 import ReviewForm from "../Review"
 
 const style = {
+    div: {
+
+        borderRadius: 50,
+        display: "inline-block",
+        width: 100,
+        margin: 100
+    },
+
     image: {
-        height: 100,
+
+        borderRadius: "100%",
+        height: 200,
+        width: 200,
+        // clip: rect(0,200,200,0)
+    },
+    description: {
+        height: 150,
+        width: 150,
+        fontSize: 10
     }
 };
 
