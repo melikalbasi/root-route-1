@@ -15,8 +15,7 @@ module.exports = {
       where: {
         pathid: req.params.pathid
       }
-    })
-    .then(allData => {
+    }).then(allData => {
       res.json(allData) 
     }).catch(err => res.status(422).json(err));
   },
@@ -27,8 +26,7 @@ module.exports = {
       where: {
         subjectid: req.params.subjectid
       }
-    })
-    .then(allData => {
+    }).then(allData => {
       res.json(allData) 
     }).catch(err => res.status(422).json(err));
   },
@@ -39,6 +37,16 @@ module.exports = {
       resourceid: req.params.resourceid
     }).then(allData => {
       res.json(allData)
+    }).catch(err => res.status(422).json(err));
+  },
+
+  getReviews: function(req, res) {
+    db.Review.findAll({
+      where: {
+        resourceid: req.params.resourceid
+      }
+    }).then(allData => {
+      res.json(allData) 
     }).catch(err => res.status(422).json(err));
   }
 

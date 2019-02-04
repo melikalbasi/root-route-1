@@ -24,6 +24,16 @@ class ResourceCard extends Component {
         innerLink: this.props.innerLink
     };
 
+    componentDidMount() {
+        this.loadReviews(this.state.id);
+    }
+
+    loadReviews = resourceid => {
+        API.getReviews(resourceid)
+        .then(res => this.setState({ reviews: res.data }))
+        .catch(err => console.log(err));
+    }
+
     handleInputChange = event => {
         this.setState({ reviewContent: event.target.value });
     };
@@ -35,8 +45,7 @@ class ResourceCard extends Component {
             if (res.data.status === "error") {
                 throw new Error(res.data.message);
             }
-            console.log(res)
-            // this.setState({ reviews: res.data.message, error: "" });
+            this.loadReviews(this.state.id)
         }).catch(err => this.setState({ error: err.message }));
     };
 

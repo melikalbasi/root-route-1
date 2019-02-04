@@ -16,5 +16,7 @@ export default {
   submitReview: function(resourceid, reviewContent) {
     return axios.post(`/api/review/${resourceid}/${reviewContent}`);
   },
-  // getReviews: function()
+  getReviews: function(resourceid) {
+    return axios.get(`/api/review/${resourceid}`);
+  }
 };

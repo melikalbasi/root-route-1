@@ -14,6 +14,8 @@ router.route("/api/paths/:pathid/subjects/:subjectid")
 router.route("/api/review/:resourceid/:reviewContent")  
   .post(pathsController.submitReview)
 
+router.route("/api/review/:resourceid")  
+  .get(pathsController.getReviews)
 
 
 // If no API routes are hit, send the React app
