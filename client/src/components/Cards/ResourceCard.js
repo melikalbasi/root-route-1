@@ -1,5 +1,6 @@
-import React from "react";
+import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import API from "../../utils/API";
 
 const style = {
     image: {
@@ -7,15 +8,45 @@ const style = {
     }
 };
 
-function ResourceCard(props) {
-    return (
-        <div key={props.resource.id}>
-            <h2><a href={props.resource.link}>{props.resource.name}</a></h2>
-            <img src={props.resource.image} alt={props.resource.name} style={style.image}></img>
-            <p>{props.resource.description}</p>
-            <Link to={`${props.link}/resource/${props.resource.id}`}>SEE MORE</Link>
-        </div>
-    );
+class ResourceCard extends Component {
+
+    state = {
+        id: this.props.resource.id,
+        name: this.props.resource.name,
+        link: this.props.resource.link,
+        image: this.props.resource.image,
+        description: this.props.resource.description,
+        reviewContent: "",
+        reviews: [],
+        error: "",
+        innerLink: this.props.innerLink
+    };
+
+    handleInputChange = event => {
+        this.setState({ reviewContent: event.target.value });
+    };
+    
+    handleFormSubmit = event => {
+        event.preventDefault();
+        API.submitReview(this.state.id, this.state.reviewContent)
+        .then(res => {
+            if (res.data.status === "error") {
+                throw new Error(res.data.message);
+            }
+            this.setState({ reviews: res.data.message, error: "" });
+        }).catch(err => this.setState({ error: err.message }));
+    };
+
+    render() {
+        return (
+            <div key={this.state.id}>
+                <h2><a href={this.state.link}>{this.state.name}</a></h2>
+                <img src={this.state.image} alt={this.state.name} style={style.image}></img>
+                <p>{this.state.description}</p>
+                <Link to={`${this.state.innerLink}/resource/${this.state.id}`}>SEE MORE</Link>
+            </div>
+        );
+    }
 }
 
 export default ResourceCard;

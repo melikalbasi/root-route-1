@@ -12,28 +12,11 @@ class Resource extends Component {
     error: ""
   };
 
-
   componentDidMount() {
     API.getResources(this.props.match.params.pathid, this.props.match.params.subjectid)
       .then(res => this.setState({ resources: res.data }))
       .catch(err => console.log(err));
   }
-
-  handleInputChange = event => {
-    this.setState({ review: event.target.value });
-  };
-
-  handleFormSubmit = event => {
-    event.preventDefault();
-    API.submitReview(this.props.match.params.pathid, this.props.match.params.subjectid, this.state.review)
-      .then(res => {
-        if (res.data.status === "error") {
-          throw new Error(res.data.message);
-        }
-        this.setState({ reviews: res.data.message, error: "" });
-      })
-      .catch(err => this.setState({ error: err.message }));
-  };
 
   render() {
     return (
@@ -45,11 +28,9 @@ class Resource extends Component {
           <div>
             <ResourceCard 
               resource={resource}
-              link={`/paths/${this.props.match.params.pathid}/subjects/${this.props.match.params.subjectid}`}
+              innerLink={`/paths/${this.props.match.params.pathid}/subjects/${this.props.match.params.subjectid}`}
             >
-            
             </ResourceCard>
-            {/* <ReviewForm resource={resource}></ReviewForm> */}
           </div>
         ))}
       </div>
