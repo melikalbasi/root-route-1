@@ -18,8 +18,8 @@ const style = {
         // clip: rect(0,200,200,0)
     },
     description: {
-        height:150, 
-        width:150,
+        height: 150,
+        width: 150,
         fontSize: 10
     }
 };
@@ -49,15 +49,15 @@ function ResourceCard(props) {
     return (
 
         <div style={style.div} key={props.resource.id}>
-            <Link to={"/resource/" + props.resource.id}>
+            <a href={props.resource.link}>
                 <img src={props.resource.image} alt={props.resource.name} style={style.image}></img>
                 <p style={style.description}>
                     {props.resource.description}
                 </p>
-                <h2><a href={props.resource.link}>{props.resource.name}</a></h2>
+                <h2>{props.resource.name}</h2>
                 {/* <Link to={`${props.link}/resource/${props.resource.id}`}>SEE MORE</Link> */}
 
-            </Link>
+            </a>
         </div>
     );
 }
