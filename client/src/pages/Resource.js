@@ -45,7 +45,11 @@ class Resource extends Component {
               <List>
                 {this.state.resources.map(resource => (
                   <div>
-                    <ResourceCard resource={resource}></ResourceCard>
+                    <ResourceCard 
+                      resource={resource}
+                      link={`/paths/${this.props.match.params.pathid}/subjects/${this.props.match.params.subjectid}`}
+                    >
+                    </ResourceCard>
                     {/* <ReviewForm resource={resource}></ReviewForm> */}
                   </div>
                 ))}
