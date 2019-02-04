@@ -10,8 +10,12 @@ router.route("/api/paths/:pathid")
 
 router.route("/api/paths/:pathid/subjects/:subjectid")
   .get(pathsController.findResources)
-  // .post(pathsController.addReview)
+  
+router.route("/api/review/:resourceid/:reviewContent")  
+  .post(pathsController.submitReview)
 
+router.route("/api/review/:resourceid")  
+  .get(pathsController.getReviews)
 
 
 // If no API routes are hit, send the React app

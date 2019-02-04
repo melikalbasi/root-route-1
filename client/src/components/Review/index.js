@@ -5,7 +5,7 @@ function ReviewForm(props) {
     <form className="review">
         <label htmlFor="reviewfield">Review:</label>
         <input
-          value={props.search}
+          value={props.reviewContent}
           onChange={props.handleInputChange}
           name="reviewfield"
           type="text"
@@ -14,7 +14,7 @@ function ReviewForm(props) {
           id="review"
         />
         <button type="submit" onClick={props.handleFormSubmit} className="btn btn-success">
-            Submit
+            Submit Review
         </button>
     </form>
   );
