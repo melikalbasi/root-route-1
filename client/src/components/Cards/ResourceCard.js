@@ -18,8 +18,8 @@ const style = {
         // clip: rect(0,200,200,0)
     },
     description: {
-        height:150, 
-        width:150,
+        height: 150,
+        width: 150,
         fontSize: 10
     }
 };
