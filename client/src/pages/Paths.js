@@ -29,8 +29,7 @@ class Paths extends Component {
             </Jumbotron>
               {/* <List style={{height:"1000px"}}> */}
                 {this.state.paths.map(path => (
-                  <PathCard path = {path}></PathCard>
-                  
+                  <PathCard path={path}></PathCard>
                 ))}
               {/* </List> */}
       </div>
