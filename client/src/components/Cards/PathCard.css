@@ -1,0 +1,8 @@
+.PathCard:hover {
+    background-color:blue;
+}
+
+.pathCardContainer {
+    display: flex;
+    
+}
