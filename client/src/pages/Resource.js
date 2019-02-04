@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
-import { List } from "../components/List";
 import ResourceCard from "../components/Cards/ResourceCard";
 // import ReviewForm from "../components/Review/";
 
@@ -39,21 +38,20 @@ class Resource extends Component {
   render() {
     return (
       <div>
-            <Jumbotron>
-              <h1>RESOURCES</h1>
-            </Jumbotron>
-              <List>
-                {this.state.resources.map(resource => (
-                  <div>
-                    <ResourceCard 
-                      resource={resource}
-                      link={`/paths/${this.props.match.params.pathid}/subjects/${this.props.match.params.subjectid}`}
-                    >
-                    </ResourceCard>
-                    {/* <ReviewForm resource={resource}></ReviewForm> */}
-                  </div>
-                ))}
-              </List>
+        <Jumbotron>
+          <h1>RESOURCES</h1>
+        </Jumbotron>
+        {this.state.resources.map(resource => (
+          <div>
+            <ResourceCard 
+              resource={resource}
+              link={`/paths/${this.props.match.params.pathid}/subjects/${this.props.match.params.subjectid}`}
+            >
+            
+            </ResourceCard>
+            {/* <ReviewForm resource={resource}></ReviewForm> */}
+          </div>
+        ))}
       </div>
     );
   }

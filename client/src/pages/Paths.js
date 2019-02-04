@@ -14,24 +14,19 @@ class Paths extends Component {
 
   loadPaths = () => {
     API.getPaths()
-      .then(allData =>
-        this.setState({ paths: allData.data}, () => {
-          console.log("paths", this.state.paths)
-        }))
+      .then(allData => this.setState({ paths: allData.data}))
       .catch(err => console.log(err));
   };
 
   render() {
     return (
       <div>
-            <Jumbotron>
-              <h1>PATHS IN THE ROOT ROUTE</h1>
-            </Jumbotron>
-              {/* <List style={{height:"1000px"}}> */}
-                {this.state.paths.map(path => (
-                  <PathCard path={path}></PathCard>
-                ))}
-              {/* </List> */}
+        <Jumbotron>
+          <h1>PATHS IN THE ROOT ROUTE</h1>
+        </Jumbotron>
+        {this.state.paths.map(path => (
+          <PathCard path={path}></PathCard>
+        ))}
       </div>
     );
   }

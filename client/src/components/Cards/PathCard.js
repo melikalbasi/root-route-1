@@ -32,15 +32,13 @@ function PathCard(props) {
 
         <div style={style.div} key={props.path.id}>
             <Link to={"/paths/" + props.path.id}>
-
-
                 <img src={props.path.image} alt={props.path.name} style={style.image}></img>
                 <p style={style.description}>
                     {props.path.description}
                 </p>
-                {/* <h2>
+                <h2>
                     {props.path.name}
-                </h2> */}
+                </h2>
             </Link>
         </div>
     );
