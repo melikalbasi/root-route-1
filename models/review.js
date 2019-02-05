@@ -3,7 +3,7 @@ module.exports = function (sequelize, DataTypes) {
         reviewContent: {
             type: DataTypes.STRING,
             validate: {
-                len: [1]
+                len: [1, 255]
             }
         },
         resourceid: {
