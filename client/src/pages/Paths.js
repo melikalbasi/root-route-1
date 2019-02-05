@@ -22,7 +22,7 @@ class Paths extends Component {
     return (
       <div>
         <Jumbotron>
-          <h1>PATHS IN THE ROOT ROUTE</h1>
+          <h1>:/RootRoute/</h1>
         </Jumbotron>
         <div className="pathCardContainer">
         {this.state.paths.map(path => (

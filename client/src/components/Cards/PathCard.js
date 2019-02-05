@@ -11,8 +11,8 @@ import "./PathCard.css";
 const style = {
     div: {
 
-        borderRadius: 50,
-        display: "inline-block",
+        // borderRadius: 50,
+        display: "flex",
         width: 100,
         margin: 100,
         
@@ -20,7 +20,7 @@ const style = {
 
     image: {
 
-        borderRadius: "100%",
+        // borderRadius: "100%",
         height: 200,
         width: 200,
         // clip: rect(0,200,200,0)
@@ -31,22 +31,7 @@ const style = {
         height:200, 
         width:200,
         fontSize: 10
-    },
-
-    imageWrap: {
-        
-        borderRadius: 50,
-        display: "inline-block",
-        width: 100,
-        margin: 100,
-        position: "relative",
-        maxHeight: 300,
-        minWidth: 300,
-        overflow: "hidden",
-        display: "flex",
-        backgroundColor:"rgba(250,250,250,.75)"
-    },
-
+    }
 };
 
 
