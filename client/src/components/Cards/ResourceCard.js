@@ -2,9 +2,10 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import API from "../../utils/API";
 import ReviewCard from "./ReviewCard";
-import ReviewForm from "../Review"
-import "./PathCard.css"
-
+import ReviewForm from "../Review";
+import "./PathCard.css";
+import "./ModalCard"
+import ModalCard from "./ModalCard";
 
 class ResourceCard extends Component {
 
@@ -17,7 +18,9 @@ class ResourceCard extends Component {
         reviewContent: "",
         reviews: [],
         error: "",
-        innerLink: this.props.innerLink
+        innerLink: this.props.innerLink,
+        openModal:false
+
     };
 
     componentDidMount() {
@@ -28,6 +31,10 @@ class ResourceCard extends Component {
         API.getReviews(resourceid)
             .then(res => this.setState({ reviews: res.data }))
             .catch(err => console.log(err));
+    }
+
+    handleModal = () => {
+        this.setState({openModal:!this.state.openModal})
     }
 
     handleInputChange = event => {
@@ -72,7 +79,11 @@ class ResourceCard extends Component {
                         reviewContent={this.state.reviewContent}
                     />
                 </div>
+{this.state.openModal ? <ModalCard handleModal={this.handleModal}/>:null}
+<button onClick={this.handleModal}>Open Modal</button>
+
             </div>
+
         );
     }
 }
