@@ -8,11 +8,7 @@ function Nav() {
       <a href="/">
         <span>Root Route</span>
       </a>
-      <a className="navlink" href="/passport">
-        {/* ternary statement */}
-        <span>Login</span>
-      </a>
-      <a className="navlink" href="/profile">
+          <a className="navlink" href="/profile">
         <span>Community</span>
       </a>
       <a className="navlink" href="/dashboard">
