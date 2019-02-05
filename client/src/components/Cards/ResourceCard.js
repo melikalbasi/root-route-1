@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import API from "../../utils/API";
-import ReviewCard from "./ReviewCard";
-import ReviewForm from "../Review";
+// import ReviewCard from "./ReviewCard";
+// import ReviewForm from "../Review";
 import "./PathCard.css";
 import "./ModalCard"
 import ModalCard from "./ModalCard";
@@ -70,14 +70,7 @@ class ResourceCard extends Component {
                             {/* <Link to={`${this.state.innerLink}/resource/${this.state.id}`}>SEE MORE</Link> */}
                         </p>
                     </a>
-                    {this.state.reviews.map(review => (
-                        <ReviewCard review={review} />
-                    ))}
-                    <ReviewForm
-                        handleFormSubmit={this.handleFormSubmit}
-                        handleInputChange={this.handleInputChange}
-                        reviewContent={this.state.reviewContent}
-                    />
+                   
                 </div>
 {this.state.openModal ? <ModalCard handleModal={this.handleModal}/>:null}
 <button onClick={this.handleModal}>Open Modal</button>

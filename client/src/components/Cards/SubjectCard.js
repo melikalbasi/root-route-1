@@ -6,8 +6,8 @@ function SubjectCard(props) {
     return (
         <div className="PathContainer">
             <div key={props.subject.id}>
-                <a href={props.subject.link}>
-                    {/* <Link to={`${props.link}/subjects/${props.subject.id}`}>SEE MORE</Link> */}
+                {/* <a href={props.link}> */}
+                    <Link to={`${props.link}/subjects/${props.subject.id}`}>
                     <div className="PathCardImg">
                         <img src={props.subject.image} alt={props.subject.name} ></img>
                     </div>
@@ -19,8 +19,8 @@ function SubjectCard(props) {
                         <hr />
                         {props.subject.description}
                     </p>
-
-                </a>
+                    </Link>
+                {/* </a> */}
             </div>
         </div>
     );

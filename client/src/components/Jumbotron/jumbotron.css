@@ -8,7 +8,7 @@
 }
 
 .jumboText {
-    color: white; 
+    color:rgba(250,250,250,.75); 
     text-align: center;
     transform: translateY(100px);
     font-family: 'Poiret One', cursive;
@@ -18,7 +18,7 @@
 }
 
 .jumboSubText{
-    color: white; 
+    color:rgba(250,250,250,.75); 
     text-align: center;
     transform: translateY(100px);
     font-family: 'Poiret One', cursive;
