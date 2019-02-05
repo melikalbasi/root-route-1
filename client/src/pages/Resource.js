@@ -31,7 +31,6 @@ class Resource extends Component {
               innerLink={`/paths/${this.props.match.params.pathid}/subjects/${this.props.match.params.subjectid}`}
             >
             </ResourceCard>
-         
         ))}
       </div>
     );
