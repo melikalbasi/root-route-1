@@ -3,19 +3,19 @@ module.exports = function (sequelize, DataTypes) {
         name: {
             type: DataTypes.STRING,
             validate: {
-                len: [1]
+                len: [1, 100]
             }
         },
         description: {
             type: DataTypes.STRING,
             validate: {
-                len: [1]
+                len: [1, 1000]
             }
         },
         image: {
             type: DataTypes.STRING,
             validate: {
-                len: [1]
+                len: [1, 500]
             }
         }
     });
