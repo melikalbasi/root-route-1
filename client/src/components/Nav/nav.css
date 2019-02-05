@@ -1,0 +1,59 @@
+.navbar{
+    background-color: transparent;
+    color:rgba(250,250,250,.75);
+    position: absolute;
+    width: 100%;
+    display:flex;
+    font-family: 'Poiret One', cursive;
+    padding:0;
+
+}
+
+hr{
+    background-color: white;
+    width: 7rem;
+}
+
+a{
+    display:inline-block;
+    color:rgba(250,250,250,.75);
+    font-size:1rem;
+    text-decoration: none;
+    padding:20px;
+    
+}
+
+a:hover{
+    display:inline-block;
+    font-size:1rem;
+    text-decoration: none;
+    padding:20px;
+    transition: .5s ease;
+
+        
+}
+
+a span{
+    position:relaive;
+    transition: 0.5s
+}
+
+a span:after{
+  
+    position:absolute;
+    opacity:0;
+    top:0;
+    font-size:1rem;
+    transition: 0.5s;
+
+}
+
+a:hover span{
+    font-size:1.5rem;
+
+}
+
+a:hover span:after {
+    opacity:1;
+    
+}

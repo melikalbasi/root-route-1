@@ -1,31 +1,11 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import API from "../../utils/API";
-import ReviewCard from "./ReviewCard";
-import ReviewForm from "../Review"
-
-const style = {
-    div: {
-
-        borderRadius: 50,
-        display: "inline-block",
-        width: 100,
-        margin: 100
-    },
-
-    image: {
-
-        borderRadius: "100%",
-        height: 200,
-        width: 200,
-        // clip: rect(0,200,200,0)
-    },
-    description: {
-        height: 150,
-        width: 150,
-        fontSize: 10
-    }
-};
+// import ReviewCard from "./ReviewCard";
+// import ReviewForm from "../Review";
+import "./PathCard.css";
+import "./ModalCard"
+import ModalCard from "./ModalCard";
 
 class ResourceCard extends Component {
 
@@ -38,7 +18,9 @@ class ResourceCard extends Component {
         reviewContent: "",
         reviews: [],
         error: "",
-        innerLink: this.props.innerLink
+        innerLink: this.props.innerLink,
+        openModal:false
+
     };
 
     componentDidMount() {
@@ -47,41 +29,54 @@ class ResourceCard extends Component {
 
     loadReviews = resourceid => {
         API.getReviews(resourceid)
-        .then(res => this.setState({ reviews: res.data }))
-        .catch(err => console.log(err));
+            .then(res => this.setState({ reviews: res.data }))
+            .catch(err => console.log(err));
+    }
+
+    handleModal = () => {
+        this.setState({openModal:!this.state.openModal})
     }
 
     handleInputChange = event => {
         this.setState({ reviewContent: event.target.value });
     };
-    
+
     handleFormSubmit = event => {
         event.preventDefault();
         API.submitReview(this.state.id, this.state.reviewContent)
-        .then(res => {
-            if (res.data.status === "error") {
-                throw new Error(res.data.message);
-            }
-            this.loadReviews(this.state.id)
-        }).catch(err => this.setState({ error: err.message }));
+            .then(res => {
+                if (res.data.status === "error") {
+                    throw new Error(res.data.message);
+                }
+                this.loadReviews(this.state.id)
+            }).catch(err => this.setState({ error: err.message }));
     };
 
     render() {
         return (
-            <div key={this.state.id}>
-                <h2><a href={this.state.link}>{this.state.name}</a></h2>
-                <img src={this.state.image} alt={this.state.name} style={style.image}></img>
-                <p>{this.state.description}</p>
-                <Link to={`${this.state.innerLink}/resource/${this.state.id}`}>SEE MORE</Link>
-                {this.state.reviews.map(review => (
-                    <ReviewCard review={review} />
-                ))}
-                <ReviewForm
-                    handleFormSubmit={this.handleFormSubmit}
-                    handleInputChange={this.handleInputChange}
-                    reviewContent={this.state.reviewContent}
-                />
+            <div className="PathContainer">
+                <div key={this.state.id}>
+                    <a href="{this.state.link}">
+                        <div className="PathCardImg">
+                            <img src={this.state.image} alt={this.state.name}></img>
+                        </div>
+                        <div className="overlay">
+                            <div className="text">Pick Me!</div>
+                        </div>
+                        <p className="PathCardDesc">
+                            {this.state.name}
+                            <hr />
+                            {this.state.description}
+                            {/* <Link to={`${this.state.innerLink}/resource/${this.state.id}`}>SEE MORE</Link> */}
+                        </p>
+                    </a>
+                   
+                </div>
+{this.state.openModal ? <ModalCard handleModal={this.handleModal}/>:null}
+<button onClick={this.handleModal}>Open Modal</button>
+
             </div>
+
         );
     }
 }

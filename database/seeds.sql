@@ -20,7 +20,7 @@ INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
 VALUES ("Javascript", "JavaScript is the programming language of the web. You can use it to add dynamic behavior, store information, and handle requests and responses on a website.", "https://github.com/abranhe/programming-languages-logos/blob/master/src/javascript/javascript_256x256.png?raw=true", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 1);
 
 INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
-VALUES ("TypeScript", "TypeScript is an open-source programming language developed and maintained by Microsoft. It is a strict syntactical superset of JavaScript, and adds optional static typing to the language. TypeScript is designed for development of large applications and transcompiles to JavaScript.", "https://raw.githubusercontent.com/abranhe/programming-languages-logos/master/src/typescript/typescript_256x256.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 1);
+VALUES ("TypeScript", " TypeScript is designed for development of large applications and transcompiles to JavaScript.", "https://raw.githubusercontent.com/abranhe/programming-languages-logos/master/src/typescript/typescript_256x256.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 1);
 
 
 
@@ -168,9 +168,6 @@ VALUES ("Ruby", "Oh my", "https://static.makeuseof.com/wp-content/uploads/2017/0
 -- Seeds for PHP
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
 VALUES ("PHP for Beginners - Become a PHP Master - CMS Project", "PHP for Beginners: learn everything you need to become a professional PHP developer with practical exercises & projects.", "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png", "https://www.udemy.com/php-for-complete-beginners-includes-msql-object-oriented/?ranMID=39197&ranEAID=EXclnL5BfX4&ranSiteID=EXclnL5BfX4-3JuO7knCRnsqv2wuW9.DcA&LSNPUBID=EXclnL5BfX4" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 10);
-
-INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("Learn PHP", "Learn the Basics", "https://learn-php.org/" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 10);
 
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
 VALUES ("Make your own blog with PHP", "A small, interactive course to teach beginners the PHP programming language.", "https://static.makeuseof.com/wp-content/uploads/2017/09/HTML-Effects-Featured-670x335.jpg", "https://ilovephp.jondh.me.uk/en/tutorial/make-your-own-blog" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 10);
