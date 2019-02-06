@@ -6,9 +6,13 @@ import PathCard from "../components/Cards/PathCard";
 class Paths extends Component {
   state = {
     paths: [],
+    user: this.props.user
   };
 
   componentDidMount() {
+    // Parsing user info for reference
+    console.log("USERNAME IN PATHS", this.state.user.name);
+    console.log("USEREMAIL IN PATHS", this.state.user.email);
     this.loadPaths();
   }
 
@@ -23,9 +27,12 @@ class Paths extends Component {
       return (
         <div>
         <Jumbotron />
-        <h1 className="PickPathText">Roots</h1>
+        <h1 className="PickPathText">Paths</h1>
         {this.state.paths.map(path => (
-          <PathCard path={path}></PathCard>
+          <PathCard 
+            path={path} 
+            user={user}
+          />
         ))}
       </div>
     );
