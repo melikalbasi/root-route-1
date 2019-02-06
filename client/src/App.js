@@ -43,13 +43,19 @@ class App extends Component {
     return (
       <Router>
         <div>
-      <Nav user={user}/>
-      {loggedInCheck}
+  
+          <Nav user={user}/>
+      
+      {/* {loggedInCheck} */}
           <Switch>
-            <Route exact path="/" component={LandingPage} />
-            <Route exact path="/paths" component={Paths} />
-            <Route exact path="/paths/:pathid" component={Subject} />
-            <Route exact path="/paths/:pathid/subjects/:subjectid" component={Resource} />
+            {/* <Route exact path="/" component={LandingPage} /> */}
+            <Route 
+              exact path="/" 
+              component={() => <LandingPage user={user}/>} 
+            />
+            <Route exact path="/paths" user={user} component={Paths} />
+            <Route exact path="/paths/:pathid" user={user} component={Subject} />
+            <Route exact path="/paths/:pathid/subjects/:subjectid" user={user} component={Resource} />
             <Route component={NoMatch} />
           </Switch>
         </div>

@@ -1,0 +1,15 @@
+.landingPage {
+    background-image: url('http://www.jessicajonesdesign.com/downloads/lines-wallpaper-aqua.gif');
+    /* color:rgba(250,250,250,.75); */
+    /* color: black;
+    position: absolute;
+    width: 100%;
+    display:flex;
+    font-family: 'Poiret One', cursive;
+    padding:0; */
+
+}
+
+.svgIcon {
+  margin: 10%;
+}

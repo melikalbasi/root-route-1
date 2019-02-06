@@ -1,6 +1,7 @@
 .navbar{
     background-color: transparent;
-    color:rgba(250,250,250,.75);
+    /* color:rgba(250,250,250,.75); */
+    color: black;
     position: absolute;
     width: 100%;
     display:flex;
@@ -8,7 +9,11 @@
     padding:0;
 
 }
-
+/* test ---- */
+.navlink {
+    color: black;
+}
+/* ---- */
 hr{
     background-color: white;
     width: 7rem;
