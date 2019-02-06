@@ -19,11 +19,11 @@ class App extends Component {
   componentDidMount() {
     axios.get("/protected")
       .then(allData => {
-       let loggedIn = false;
-          if (allData.data.email.length > 0) {
-            loggedIn = true;
-          } 
-      
+        let loggedIn = false;
+        if (allData.data.email.length > 0) {
+          loggedIn = true;
+        }
+
         this.setState({
           user: allData.data,
           isLoggedIn: loggedIn
@@ -43,19 +43,32 @@ class App extends Component {
     return (
       <Router>
         <div>
-  
-          <Nav user={user}/>
-      
-      {/* {loggedInCheck} */}
+
+          <Nav user={user} />
+
+          {/* {loggedInCheck} */}
           <Switch>
             {/* <Route exact path="/" component={LandingPage} /> */}
-            <Route 
-              exact path="/" 
-              component={() => <LandingPage user={user}/>} 
+            <Route
+              exact path="/"
+              component={() => <LandingPage user={user} />}
             />
-            <Route exact path="/paths" user={user} component={Paths} />
-            <Route exact path="/paths/:pathid" user={user} component={Subject} />
-            <Route exact path="/paths/:pathid/subjects/:subjectid" user={user} component={Resource} />
+
+            <Route
+              exact path="/paths"
+              component={() => <Paths user={user} />}
+            />
+
+            <Route
+              exact path="/paths/:pathid"
+              component={() => <Subject user={user} />}
+            />
+
+            <Route
+              exact path="/paths/:pathid/subjects/:subjectid"
+              component={() => <Resource user={user} />}
+            />
+
             <Route component={NoMatch} />
           </Switch>
         </div>
