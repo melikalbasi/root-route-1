@@ -24,6 +24,7 @@ module.exports = function (sequelize, DataTypes) {
                 len: [1, 500]
             }
         }
+        // courses complete set to a boolean
     });
 
     Resource.associate = function (models) {

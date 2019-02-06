@@ -19,10 +19,12 @@ class Resource extends Component {
   }
 
   render() {
+
     return (
       <div>
         {/* <Jumbotron /> */}
         <h1 className="PickPathText">Resources</h1>
+        <div class="row">
         {this.state.resources.map(resource => (
 
           <ResourceCard
@@ -31,6 +33,7 @@ class Resource extends Component {
           >
           </ResourceCard>
         ))}
+        </div>
       </div>
     );
   }
