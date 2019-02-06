@@ -12,16 +12,12 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(express.static("client/build"));
 
-// Serve up static assets (usually on heroku)
-// if (process.env.NODE_ENV === "production") {
-  // app.use(express.static("client/build"));
-// }
-// Add routes, both API and view
 app.use(routes);
 
-app.use(passport.initialize()); // after line no.20 (express.static)
+app.use(passport.initialize());
 require("./config/passport");
 
+var user;
 
 
 app.get(
@@ -32,13 +28,37 @@ app.get(
   "/auth/google/callback",
   passport.authenticate("google", { failureRedirect: "/", session: false }),
   function(req, res) {
+      user = req.user;
+      db.User.create(user)
+        .then(data => console.log("this is your data: ", data))
+        .catch(err => console.log(err))
       console.log(req.user)
       var token = req.user.token;
       console.log(token)
-      res.redirect("/?token=" + token);
+      res.redirect("http://localhost:3000/paths");
       // res.redirect("http://localhost:3000?token=" + token);
   }
 );
+
+// Checks if a user is logged in
+const accessProtectionMiddleware = (req, res, next) => { 
+  console.log("RES AUTHENTICATED ", req.isAuthenticated()) 
+  if (req.isAuthenticated()) {
+    next();
+  } else {
+    res.status(403).json({
+      message: 'must be logged in to continue',
+    });
+  }
+};
+
+// A secret endpoint accessible only to logged-in users
+app.get('/protected', (req, res) => {  
+  res.json(user);
+});
+
+
+
 
 db.sequelize.sync({ force: false }).then(function() {
   app.listen(PORT, function() {

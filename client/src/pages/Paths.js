@@ -17,10 +17,11 @@ class Paths extends Component {
       .then(allData => this.setState({ paths: allData.data }))
       .catch(err => console.log(err));
   };
-
+  
   render() {
-    return (
-      <div>
+    
+      return (
+        <div>
         <Jumbotron />
         <h1 className="PickPathText">Roots</h1>
         {this.state.paths.map(path => (

@@ -1,7 +1,7 @@
 import React from "react";
 import "./nav.css";
 
-function Nav() {
+function Nav(props) {
   return (
     <nav className="navbar">
 
@@ -14,6 +14,9 @@ function Nav() {
       <a className="navlink" href="/dashboard">
         <span>Dashboard</span>
       </a>
+    <p>
+      Welcome, {props.user.name}!
+    </p>
 
       <a className="navlink" href="/auth/google" class="button">
           <div>
