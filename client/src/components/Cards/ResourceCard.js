@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import API from "../../utils/API";
-// import ReviewCard from "./ReviewCard";
-// import ReviewForm from "../Review";
-import "./PathCard.css";
+import "./ResourceCard.css";
 import "./ModalCard"
 import ModalCard from "./ModalCard";
 
@@ -19,7 +17,7 @@ class ResourceCard extends Component {
         reviews: [],
         error: "",
         innerLink: this.props.innerLink,
-        openModal:false
+        openModal: false
 
     };
 
@@ -34,7 +32,7 @@ class ResourceCard extends Component {
     }
 
     handleModal = () => {
-        this.setState({openModal:!this.state.openModal})
+        this.setState({ openModal: !this.state.openModal })
     }
 
     handleInputChange = event => {
@@ -70,10 +68,10 @@ class ResourceCard extends Component {
                             {/* <Link to={`${this.state.innerLink}/resource/${this.state.id}`}>SEE MORE</Link> */}
                         </p>
                     </a>
-                   
+
                 </div>
-{this.state.openModal ? <ModalCard handleModal={this.handleModal}/>:null}
-<button onClick={this.handleModal}>Open Modal</button>
+                {this.state.openModal ? <ModalCard handleModal={this.handleModal} /> : null}
+                <button onClick={this.handleModal}>Open Modal</button>
 
             </div>
 

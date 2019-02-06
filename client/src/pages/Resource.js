@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Jumbotron from "../components/Jumbotron";
+// import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
 import ResourceCard from "../components/Cards/ResourceCard";
 // import ReviewForm from "../components/Review/";
@@ -21,7 +21,7 @@ class Resource extends Component {
   render() {
     return (
       <div>
-        <Jumbotron />
+        {/* <Jumbotron /> */}
         <h1 className="PickPathText">Resources</h1>
         {this.state.resources.map(resource => (
 

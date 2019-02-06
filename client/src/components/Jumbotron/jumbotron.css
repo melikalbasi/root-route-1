@@ -1,29 +1,56 @@
 .jumbotron {
-    background-image: url('https://bit.ly/2SpVJcC');
+    background-image: url('https://slack-imgs.com/?c=1&url=http%3A%2F%2Fwww.jessicajonesdesign.com%2Fdownloads%2Flines-wallpaper-aqua.gif');
     background-repeat: no-repeat;
     background-size: 100vw;
     height:600px;
     border-radius:0;
-   
+   /* https://bit.ly/2GqU3sY */
 }
 
 .jumboText {
-    color:rgba(250,250,250,.75); 
+    color: white; 
     text-align: center;
     transform: translateY(100px);
-    font-family: 'Poiret One', cursive;
-    font-size: 8rem;
+    font-family: 'Raleway';
+    font-size: 7rem;
+    padding:20px;
+    border: 5px double rgba(250,250,250,.75);
 
+}
+
+.JumboButton{
+    color: white; 
+    text-align: center;
+    transform: translateY(100px);
+    font-family: 'Raleway';
+    font-size: 1rem;
+    padding:20px;
+    border: 5px double rgba(250,250,250,.75);
+    background-color:transparent;
+    /* align-items: center;
+    justify-content: center; */
+
+}
+
+.JumboButton:hover{
+    color: rgb(25, 25, 54); 
+    text-align: center;
+    transform: translateY(100px);
+    font-family: 'Raleway';
+    font-size: 2rem;
+    transition: 2s ease;
+    padding:20px;
+    border: 5px double rgba(250,250,250,.75);
+    background-color:white;
 
 }
 
 .jumboSubText{
-    color:rgba(250,250,250,.75); 
+    color: white; 
     text-align: center;
     transform: translateY(100px);
-    font-family: 'Poiret One', cursive;
-    font-size: 2.5rem;
-
+    font-family: 'Raleway';
+    font-size: 2rem;
  
 }
 
@@ -42,20 +69,19 @@ hr{
     }
     
     .jumboText {
-        color: white; 
+        color: rgba(250,250,250,.75); 
         text-align: center;
         transform: translateY(200px);
-        font-family: 'Poiret One', cursive;
+        font-family: 'Raleway';
         font-size: 5rem;
-
 
     }
 
     .jumboSubText{
-        color: white; 
+        color: rgba(250,250,250,.75); 
         text-align: center;
         transform: translateY(220px);
-        font-family: 'Poiret One', cursive;
+        font-family: 'Raleway';
         font-size: 2rem;
 
     
