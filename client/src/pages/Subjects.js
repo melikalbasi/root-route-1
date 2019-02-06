@@ -19,11 +19,10 @@ class Subject extends Component {
   render() {
     return (
       <div>
-        <Jumbotron>
-          <h1>Subjects</h1>
-        </Jumbotron>
+        <Jumbotron />
+        <h1 className="PickPathText">Subjects</h1>
         {this.state.subjects.map(subject => (
-          <SubjectCard 
+          <SubjectCard
             subject={subject}
             link={`/paths/${this.props.match.params.pathid}`}
           >

@@ -1,0 +1,69 @@
+  .overlay {
+    position: absolute;
+    bottom: -20px;
+    left: 20px;
+    right: 0;
+    background-color: rgba(0,0,0,.75);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: 1s ease;
+  }
+  
+  .PathContainer:hover .overlay {
+    height: 100%;
+    border: none;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+    border: 1px solid white;
+    padding: 10px;
+
+  }
+
+.PathCardDesc{
+    padding: 20px;
+    font-size: 15px;
+    height: 275px;
+    width: 300px;
+    font-family: 'Poiret One', cursive;
+    box-shadow: 10px 10px 175px rgba(116, 116, 116, 0.5);
+    color:black;
+    font-weight:bold;
+    border: 1px solid rgba(0,0,0,.1);
+}
+
+img {
+    background-color: white;
+    height: 200px;
+    width: 300px;
+
+}
+
+ .PathContainer {
+    height: 200px;
+    width: 300px;
+    display: -webkit-inline-box;
+    margin:50px ;
+    text-align:center;
+    margin-bottom: 300px;
+    position: relative;
+} 
+
+.PickPathText{
+    text-align:center;
+    font-family: 'Poiret One', cursive;
+
+}
+
+/* Modal */

@@ -21,17 +21,18 @@ class Resource extends Component {
   render() {
     return (
       <div>
-        <Jumbotron>
-          <h1>RESOURCES</h1>
-        </Jumbotron>
+        <Jumbotron />
+        <h1 className="PickPathText">Resources</h1>
+        <div class="row">
         {this.state.resources.map(resource => (
-      
-            <ResourceCard 
-              resource={resource}
-              innerLink={`/paths/${this.props.match.params.pathid}/subjects/${this.props.match.params.subjectid}`}
-            >
-            </ResourceCard>
+
+          <ResourceCard
+            resource={resource}
+            innerLink={`/paths/${this.props.match.params.pathid}/subjects/${this.props.match.params.subjectid}`}
+          >
+          </ResourceCard>
         ))}
+        </div>
       </div>
     );
   }
