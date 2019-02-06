@@ -149,17 +149,6 @@ class ResourceCard extends Component {
                     <img  src={this.state.image} alt={this.state.name}></img>
                 </div>
                 <p>{this.state.description}</p>
-<<<<<<< HEAD
-                <Link to={`${this.state.innerLink}/resource/${this.state.id}`}>SEE MORE</Link>
-                {this.state.reviews.map(review => (
-                    <ReviewCard review={review} key={review.id} />
-                ))}
-                <ReviewForm
-                    handleFormSubmit={this.handleFormSubmit}
-                    handleInputChange={this.handleInputChange}
-                    reviewContent={this.state.reviewContent}
-                />
-=======
                 {/* -----We may need this, please don't delete :)----- */}
                 {/* <Link to={`${this.state.innerLink}/resource/${this.state.id}`}>SEE MORE</Link> */}
                 
@@ -176,7 +165,6 @@ class ResourceCard extends Component {
                     />
                 </div>
                 ) }
->>>>>>> 130d15bd8338f100377aab11a3cefd44966176f8
             </div>
         );
     }

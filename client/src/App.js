@@ -40,12 +40,11 @@ class App extends Component {
     if (isLoggedIn) {
       loggedInCheck = (<h1>Logged In!</h1>)
     }
-
     return (
       <Router>
         <div>
-          <Nav user={user}/>
-          {loggedInCheck}
+      <Nav user={user}/>
+      {loggedInCheck}
           <Switch>
             <Route exact path="/" component={LandingPage} />
             <Route exact path="/paths" component={Paths} />

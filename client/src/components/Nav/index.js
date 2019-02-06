@@ -14,11 +14,9 @@ function Nav(props) {
       <a className="navlink" href="/dashboard">
         <span>Dashboard</span>
       </a>
-<<<<<<< HEAD
     <p>
       Welcome, {props.user.name}!
     </p>
-=======
 
       <a className="navlink" href="/auth/google" class="button">
           <div>
@@ -53,7 +51,6 @@ function Nav(props) {
    </div>
 </a>
 
->>>>>>> 130d15bd8338f100377aab11a3cefd44966176f8
     </nav>
   );
 }
