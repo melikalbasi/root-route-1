@@ -29,10 +29,13 @@ app.get(
   passport.authenticate("google", { failureRedirect: "/", session: false }),
   function(req, res) {
       user = req.user;
+      db.User.create(user)
+        .then(data => console.log("this is your data: ", data))
+        .catch(err => console.log(err))
       console.log(req.user)
       var token = req.user.token;
       console.log(token)
-      res.redirect("/?token=" + token);
+      res.redirect("http://localhost:3000/paths");
       // res.redirect("http://localhost:3000?token=" + token);
   }
 );

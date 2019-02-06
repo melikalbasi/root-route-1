@@ -4,6 +4,7 @@ import Paths from "./pages/Paths";
 import NoMatch from "./pages/NoMatch";
 import Subject from "./pages/Subjects";
 import Resource from "./pages/Resource";
+import LandingPage from "./pages/LandingPage";
 import Nav from "./components/Nav";
 import axios from "axios";
 
@@ -32,13 +33,21 @@ class App extends Component {
   }
 
   render() {
+    const {
+      isLoggedIn, user
+    } = this.state
+    let loggedInCheck = null;
+    if (isLoggedIn) {
+      loggedInCheck = (<h1>Logged In!</h1>)
+    }
 
     return (
       <Router>
         <div>
-          <Nav />
+          <Nav user={user}/>
+          {loggedInCheck}
           <Switch>
-            <Route exact path="/" component={Paths} />
+            <Route exact path="/" component={LandingPage} />
             <Route exact path="/paths" component={Paths} />
             <Route exact path="/paths/:pathid" component={Subject} />
             <Route exact path="/paths/:pathid/subjects/:subjectid" component={Resource} />
