@@ -14,16 +14,16 @@ class Paths extends Component {
 
   loadPaths = () => {
     API.getPaths()
-      .then(allData => this.setState({ paths: allData.data}))
+      .then(allData => this.setState({ paths: allData.data }))
       .catch(err => console.log(err));
   };
-
+  
   render() {
-    return (
-      <div>
-        <Jumbotron>
-          <h1>PATHS IN THE ROOT ROUTE</h1>
-        </Jumbotron>
+    
+      return (
+        <div>
+        <Jumbotron />
+        <h1 className="PickPathText">Roots</h1>
         {this.state.paths.map(path => (
           <PathCard path={path}></PathCard>
         ))}

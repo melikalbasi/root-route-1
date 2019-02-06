@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
+
 import SubjectCard from "../components/Cards/SubjectCard";
 
 class Subject extends Component {
@@ -17,13 +18,13 @@ class Subject extends Component {
 
 
   render() {
+
     return (
       <div>
-        <Jumbotron>
-          <h1>Subjects</h1>
-        </Jumbotron>
+        <Jumbotron />
+        <h1 className="PickPathText">Subjects</h1>
         {this.state.subjects.map(subject => (
-          <SubjectCard 
+          <SubjectCard
             subject={subject}
             link={`/paths/${this.props.match.params.pathid}`}
           >

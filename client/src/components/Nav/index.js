@@ -1,13 +1,24 @@
 import React from "react";
+import "./nav.css";
 
-function Nav() {
+function Nav(props) {
   return (
     <nav className="navbar">
-      <a href="/">
-        Root Route
-      </a>
 
-      <a href="/auth/google" class="button">
+      <a href="/">
+        <span>Root Route</span>
+      </a>
+          <a className="navlink" href="/profile">
+        <span>Community</span>
+      </a>
+      <a className="navlink" href="/dashboard">
+        <span>Dashboard</span>
+      </a>
+    <p>
+      Welcome, {props.user.name}!
+    </p>
+
+      <a className="navlink" href="/auth/google" class="button">
           <div>
             <span class="svgIcon t-popup-svg">
               <svg

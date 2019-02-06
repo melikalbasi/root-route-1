@@ -1,12 +1,11 @@
 import React from "react";
+import "./jumbotron.css";
 
-function Jumbotron({ children }) {
+function Jumbotron() {
   return (
-    <div
-      style={{ height: 50, textAlign: "center" }}
-      className="jumbotron"
-    >
-      {children}
+    <div className="jumbotron">
+      <h1 className="jumboText">:/RootRoute/ </h1>
+      <h1 className="jumboSubText">. . for the self-taught </h1>
     </div>
   );
 }
