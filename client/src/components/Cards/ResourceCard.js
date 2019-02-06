@@ -74,7 +74,7 @@ class ResourceCard extends Component {
                 <p>{this.state.description}</p>
                 <Link to={`${this.state.innerLink}/resource/${this.state.id}`}>SEE MORE</Link>
                 {this.state.reviews.map(review => (
-                    <ReviewCard review={review} />
+                    <ReviewCard review={review} key={review.id} />
                 ))}
                 <ReviewForm
                     handleFormSubmit={this.handleFormSubmit}
