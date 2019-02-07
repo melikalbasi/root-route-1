@@ -44,29 +44,29 @@ class App extends Component {
       <Router>
         <div>
 
-          <Nav user={user} />
+          <Nav user={user} isLoggedIn={isLoggedIn} />
 
           {/* {loggedInCheck} */}
           <Switch>
             {/* THANKS to https://tylermcginnis.com/react-router-pass-props-to-components/ */}
             <Route
               exact path="/"
-              render={(props) => <LandingPage {...props} user={user} />}
+              render={(props) => <LandingPage {...props} user={user} isLoggedIn={isLoggedIn} />}
             />
 
             {this.state.isLoggedIn && <Route
               exact path="/paths"
-              render={(props) => <Paths {...props} user={user} />}
+              render={(props) => <Paths {...props} user={user} isLoggedIn={isLoggedIn} />}
             />}
 
             {this.state.isLoggedIn && <Route
               exact path="/paths/:pathid"
-              render={(props) => <Subject {...props} user={user} />}
+              render={(props) => <Subject {...props} user={user} isLoggedIn={isLoggedIn} />}
             />}
 
             {this.state.isLoggedIn && <Route
               exact path="/paths/:pathid/subjects/:subjectid"
-              render={(props) => <Resource {...props} user={user} />}
+              render={(props) => <Resource {...props} user={user} isLoggedIn={isLoggedIn} />}
             />}
 
             <Route component={NoMatch} />

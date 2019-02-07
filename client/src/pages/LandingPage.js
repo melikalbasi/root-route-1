@@ -17,7 +17,7 @@ class LandingPage extends Component {
     return (
       <div className="landingPage">
 
-        <a href="http://localhost:3001/auth/google" className="button">
+        <a href="/auth/google" className="button">
           <div>
             <span className="svgIcon t-popup-svg">
               <svg

@@ -23,22 +23,26 @@ var user;
 app.get(
   "/auth/google",
   passport.authenticate("google", { scope: ["profile", "email"] })
+  
 );
 app.get(
   "/auth/google/callback",
-  passport.authenticate("google", { failureRedirect: "/", session: false }),
+  passport.authenticate("google", { failureRedirect: "/404", session: true }),
   function(req, res) {
       user = req.user;
       db.User.create(user)
         .then(data => console.log("this is your data: ", data))
         .catch(err => console.log(err))
-      console.log(req.user)
+      console.log('***user***' + req.user)
       var token = req.user.token;
-      console.log(token)
-      res.redirect("http://localhost:3000/paths");
-      // res.redirect("http://localhost:3000?token=" + token);
+      console.log('***token***' + token)
+      // res.redirect("/");
+      res.redirect("/?token=" + token);
   }
 );
+
+
+
 
 // Checks if a user is logged in
 const accessProtectionMiddleware = (req, res, next) => { 

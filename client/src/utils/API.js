@@ -18,5 +18,8 @@ export default {
   },
   getReviews: function(resourceid) {
     return axios.get(`/api/review/${resourceid}`);
+  },
+  logOut: function() {
+    return axios.get("/api/logout")
   }
 };
