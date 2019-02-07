@@ -3,7 +3,7 @@ import React from "react";
 function ReviewCard(props) {
     return (
         <div>
-            <p>Review #{props.review.id}: {props.review.reviewContent}</p>
+            <p>Review from user {props.user.name} ({props.user.email}): {props.review.reviewContent}</p>
         </div>
     );
 }

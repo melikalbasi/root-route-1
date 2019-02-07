@@ -31,7 +31,7 @@ class Paths extends Component {
         {this.state.paths.map(path => (
           <PathCard 
             path={path} 
-            user={user}
+            user={this.state.user}
           />
         ))}
       </div>
