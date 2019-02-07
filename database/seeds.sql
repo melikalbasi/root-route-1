@@ -11,31 +11,59 @@ VALUES ("DevOps", "DevOps is the combination of cultural philosophies, practices
 
 -- Seeds for Front End
 INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
-VALUES ("HTML", "Hypertext Markup Language is the standard markup language for creating web pages and web applications. With Cascading Style Sheets and JavaScript, it forms a triad of cornerstone technologies for the World Wide Web", "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_960_720.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 1);
+VALUES ("HTML", "Hypertext Markup Language is the standard markup language for creating web pages and web applications. With Cascading Style Sheets and JavaScript, it forms a triad of cornerstone technologies for the World Wide Web", "https://ih1.redbubble.net/image.361593789.5453/ap,550x550,12x12,1,transparent,t.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 1);
 
 INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
-VALUES ("CSS", "CSS is a language for specifying how documents are presented to users — how they are styled, laid out, etc.", "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_960_720.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 1);
+VALUES ("CSS", "CSS is a language for specifying how documents are presented to users — how they are styled, laid out, etc.", "https://neoteric.eu/wp-content/uploads/2016/03/CSS-Logo-214x300-1.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 1);
 
 INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
 VALUES ("Javascript", "JavaScript is the programming language of the web. You can use it to add dynamic behavior, store information, and handle requests and responses on a website.", "https://github.com/abranhe/programming-languages-logos/blob/master/src/javascript/javascript_256x256.png?raw=true", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 1);
 
 INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
-VALUES ("TypeScript", " TypeScript is designed for development of large applications and transcompiles to JavaScript.", "https://raw.githubusercontent.com/abranhe/programming-languages-logos/master/src/typescript/typescript_256x256.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 1);
+VALUES ("JQuery", "jQuery is a JavaScript Library that greatly simplifies JavaScript programming and is easy to learn.", "https://github.com/abranhe/programming-languages-logos/blob/master/src/javascript/javascript_256x256.png?raw=true", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 1);
+
+INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
+VALUES ("TypeScript", "TypeScript is designed for development of large applications and transcompiles to JavaScript.", "https://raw.githubusercontent.com/abranhe/programming-languages-logos/master/src/typescript/typescript_256x256.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 1);
+
+INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
+VALUES ("Bootstrap", "A popular front end framework", "http://pluspng.com/img-png/bootstrap-logo-png-logo-228.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 1);
+
+INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
+VALUES ("SASS", "An dynamic extension of CSS", "https://creativestudios.design/wp-content/uploads/2016/05/Sass-Tutorials-400x231.jpg", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 1);
+
+INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
+VALUES ("React", "React is a JavaScript library for building user interfaces.", "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto/gigs2/4445319/original/a80d251ffc93fb2706ea41afa69b1f7608c09a6b/create-reusable-react-js-components.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 1);
+
+INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
+VALUES ("Redux", "While React has built-in methods to help manage the state of your application, libraries like Redux give you a framework and a method to do so cleanly and efficiently.", "https://upload.wikimedia.org/wikipedia/commons/4/49/Redux.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 1);
+
+INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
+VALUES ("Angular JS", "For single-page applications, the AngularJS framework creates rich interactive features for a real-time experience.", "https://s3-us-west-2.amazonaws.com/cosmicjs/2051b220-f3e7-11e8-a2f6-9bca35b9aa63-angular.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 1);
+
+INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
+VALUES ("Vue", "A JavaScript framework for building interfaces", "https://vuejs.org/images/logo.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 1);
+
+INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
+VALUES ("JSON", "Represent your data in text", "https://i0.wp.com/mydevgeek.com/wp-content/uploads/2017/09/json.png?w=256&ssl=1", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 1);
+
 
 
 
 -- Seeds for Back End
 INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
-VALUES ("Node", "It is extremely fast and proficient with internet fundamentals such as HTTP, DNS, TCP. Also, JavaScript was a well-known language, making Node.js immediately accessible to the entire web development community.", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStuNjkPk_E8cAmmUC0iYn0IXzlMrkpqKsjfuDQdQ5yohQdMg8m", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 2);
+VALUES ("Node", "Node.js is an open-source, cross-platform JavaScript run-time environment that executes JavaScript code outside of a browser.", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStuNjkPk_E8cAmmUC0iYn0IXzlMrkpqKsjfuDQdQ5yohQdMg8m", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 2);
 
 INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
 VALUES ("Express", "A fast, unopinionated, minimalist web framework for Node.js", "https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/359/thumb/expressjslogo.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 2);
 
 INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
-VALUES ("React", "React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes. Declarative views make your code more predictable and easier to debug.", "https://res.cloudinary.com/teepublic/image/private/s--m0jciOMo--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1506059634/production/designs/1922918_1.jpg", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 2);
+VALUES ("React", "React makes it painless to create interactive UIs and will efficiently update and render just the right components when your data changes.", "https://res.cloudinary.com/teepublic/image/private/s--m0jciOMo--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1506059634/production/designs/1922918_1.jpg", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 2);
 
 INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
-VALUES ("Python", "Python was one of the first programming languages that was easy for people to pick up quickly. It is open source and is free to use even for commercial applications. It’s used as a scripting language, and programmers can easily produce readable and functional code in a very short period of time.", "https://www.andreabacciu.com/wp-content/uploads/2015/02/Python-Logo-PNG-Image.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 2);
+VALUES ("Python", "Python is used as a scripting language, and programmers can easily produce readable and functional code in a very short period of time.", "https://www.andreabacciu.com/wp-content/uploads/2015/02/Python-Logo-PNG-Image.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 2);
+
+INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
+VALUES ("Django", "A popular web framework for Python", "https://milindtech.com/wp-content/uploads/2018/02/django-logo.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 2);
 
 INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
 VALUES ("Ruby", "Ruby is a popular programming language renowned for its simplicity and elegance. ", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxS2_g61gBhCB6F1R0rRjRm4mjd6etOIocD7jq2Ae3AKVse7C2", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 2);
@@ -43,6 +71,17 @@ VALUES ("Ruby", "Ruby is a popular programming language renowned for its simplic
 INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
 VALUES ("PHP", "PHP is a popular general-purpose scripting language that is especially suited to web development.", "http://fractalconsultancy.com/wp-content/uploads/2013/12/logo_php.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 2);
 
+INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
+VALUES ("JAVA", "Java is a general-purpose computer-programming language that is concurrent, class-based, and object-oriented.", "https://diylogodesigns.com/wp-content/uploads/2017/07/java-logo-vector-768x768.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 2);
+
+INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
+VALUES ("Firebase", "A realtime backend for your web or mobile app", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxS2_g61gBhCB6F1R0rRjRm4mjd6etOIocD7jq2Ae3AKVse7C2", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 2);
+
+INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
+VALUES ("Perl", "Perl 5 has been nicknamed `the Swiss Army chainsaw of scripting languages` because of its flexibility and power, and also its ugliness.", "http://blogs.perl.org/users/jakeoff/perl-logo.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 2);
+
+INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
+VALUES ("Mongo", "MongoDB is a cross-platform document-oriented database program.", "http://blogs.perl.org/users/jakeoff/perl-logo.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 2);
 
 -- Seeds for DevOps
 INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
@@ -56,6 +95,7 @@ VALUES ("Rust", "Rust is a multi-paradigm systems programming language[12] focus
 
 INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
 VALUES ("Go", "Go (also called GoLang) is an open source, general-purpose programming language developed by Google engineers to create dependable and efficient software. Most similarly modeled after C, Go is statically typed and explicit.", "https://sdtimes.com/wp-content/uploads/2018/02/golang.sh_-490x490.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 3);
+
 
 
 -- FRONT END LANGUAGES-resources
@@ -128,16 +168,6 @@ VALUES ("Express", "Try this", "https://udemy-images.udemy.com/course/750x422/59
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
 VALUES ("Express", "Oh my", "https://static.makeuseof.com/wp-content/uploads/2017/09/HTML-Effects-Featured-670x335.jpg", "https://blog.prototypr.io/a-little-introduction-to-html-2f82cd9f602c" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 6);
 
-
--- Seeds for React
-INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("React", "Start here", "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png", "https://blog.prototypr.io/a-little-introduction-to-html-2f82cd9f602c" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 7);
-
-INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("React", "Try this", "https://udemy-images.udemy.com/course/750x422/59535_1f48_6.jpg", "https://blog.prototypr.io/a-little-introduction-to-html-2f82cd9f602c" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 7);
-
-INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("React", "Oh my", "https://static.makeuseof.com/wp-content/uploads/2017/09/HTML-Effects-Featured-670x335.jpg", "https://blog.prototypr.io/a-little-introduction-to-html-2f82cd9f602c" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 7);
 
 
 -- Seeds for Python
@@ -218,4 +248,3 @@ VALUES ("React", "Try this", "https://udemy-images.udemy.com/course/750x422/5953
 
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
 VALUES ("React", "Oh my", "https://static.makeuseof.com/wp-content/uploads/2017/09/HTML-Effects-Featured-670x335.jpg", "https://blog.prototypr.io/a-little-introduction-to-html-2f82cd9f602c" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 14);
-
