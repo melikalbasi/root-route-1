@@ -10,7 +10,7 @@ function PathCard(props) {
                     <div className="PathCardImg">
                         <img src={props.path.image} alt={props.path.name} ></img>
                     </div>
-                    <div className="overlay">
+                    <div className="PathCardOverlay">
                         <div className="text">Pick Me!</div>
                     </div>
                     <p className="PathCardDesc">
@@ -25,5 +25,4 @@ function PathCard(props) {
 
     );
 }
-
 export default PathCard;

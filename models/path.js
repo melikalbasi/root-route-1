@@ -15,7 +15,7 @@ module.exports = function(sequelize, DataTypes) {
     image: {
       type: DataTypes.STRING,
       validate: {
-        len: [1, 500]
+        len: [1, 1000]
       }
     }
   });
