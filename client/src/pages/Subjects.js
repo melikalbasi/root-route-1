@@ -4,6 +4,13 @@ import API from "../utils/API";
 
 import SubjectCard from "../components/Cards/SubjectCard";
 
+const style = {
+  SubjectHeader:{
+    textAlign: "center",
+
+  }
+}
+
 class Subject extends Component {
   state = {
     subjects: []
@@ -21,8 +28,9 @@ class Subject extends Component {
 
     return (
       <div>
-        {/* <Jumbotron /> */}
-        <h1 className="PickPathText">Subjects</h1>
+        <div className="SubjectHeader" style={style.SubjectHeader}>
+        <h3>Click on any technology to find the best online courses</h3>
+        </div>
         {this.state.subjects.map(subject => (
           <SubjectCard
             subject={subject}

@@ -4,6 +4,14 @@ import API from "../utils/API";
 import ResourceCard from "../components/Cards/ResourceCard";
 // import ReviewForm from "../components/Review/";
 
+const style={
+  ResourceHeader:{
+    textAlign:"center",
+    padding: 20,
+    paddingBottom: 40
+  }
+}
+
 class Resource extends Component {
   state = {
     resources: [],
@@ -21,10 +29,11 @@ class Resource extends Component {
   render() {
 
     return (
-      <div>
-        {/* <Jumbotron /> */}
-        <h1 className="PickPathText">Resources</h1>
-        <div class="row">
+        <div>
+          <div className="ResourceHeader" style={style.ResourceHeader}>
+          <h3>Click any course to start mastering skills</h3>
+          </div>
+
         {this.state.resources.map(resource => (
 
           <ResourceCard
@@ -34,9 +43,11 @@ class Resource extends Component {
           </ResourceCard>
         ))}
         </div>
-      </div>
     );
   }
 }
+
+
+
 
 export default Resource;

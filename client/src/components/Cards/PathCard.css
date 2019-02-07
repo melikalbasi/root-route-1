@@ -1,4 +1,4 @@
-  .overlay {
+  .PathCardOverlay {
     position: absolute;
     bottom: -20px;
     left: 20px;
@@ -8,11 +8,14 @@
     width: 100%;
     height: 0;
     transition: 1s ease;
+    color:white;
+
   }
   
-  .PathContainer:hover .overlay {
+  .PathContainer:hover .PathCardOverlay {
     height: 100%;
     border: none;
+    color:white;
   }
   
   .text {
@@ -25,45 +28,82 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-    font-family: 'Raleway';
+    font-family: ‘Nunito’, sans-serif;
     border: 1px solid white;
     padding: 10px;
 
+  }
+
+  .text:hover{
+    color:white;
   }
 
 .PathCardDesc{
     padding: 20px;
     font-size: 15px;
     height: 275px;
-    width: 300px;
-    font-family: 'Raleway';
+    width: 350px;
+    font-family: ‘Nunito’, sans-serif;
     box-shadow: 10px 10px 175px rgba(116, 116, 116, 0.5);
     color:black;
     font-weight:bold;
     border: 1px solid rgba(0,0,0,.1);
+    
 }
 
 img {
     background-color: white;
     height: 200px;
-    width: 300px;
+    width: 350px;
 
 }
 
  .PathContainer {
     height: 200px;
-    width: 300px;
+    width: 350px;
     display: -webkit-inline-box;
-    margin:50px ;
+    margin-top :0px ;
     text-align:center;
     margin-bottom: 300px;
+    margin-left:50px;
     position: relative;
+    align-items:center;
 } 
 
-.PickPathText{
-    text-align:center;
-    font-family: 'Raleway';
+.ReviewButton{
+  color: black;
+  font-size: 20px;
+  /* top: 50%;
+  left: 50%; */
+  /* -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+  text-align: center;
+  font-family: ‘Nunito’, sans-serif;
+  border: 1px solid white;
+  padding: 10px;
+  background-color:transparent;
 
 }
 
-/* Modal */
+.ReviewArea{
+  /* margin-top:0px; */
+  padding: 20px;
+  font-size: 15px;
+  height: 275px;
+  width: 300px;
+
+  box-shadow: 10px 10px 175px rgba(116, 116, 116, 0.5);
+  color:black;
+  font-weight:bold;
+  border: 1px solid rgba(0,0,0,.1);
+
+}
+
+a{
+  color:white;
+}
+
+a:hover{
+  color:white;
+}

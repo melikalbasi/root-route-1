@@ -1,26 +1,26 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./PathCard.css";
+import "./SubjectCard.css";
 
 function SubjectCard(props) {
     return (
-        <div className="PathContainer">
+        <div className="SubjectContainer">
             <div key={props.subject.id}>
-                {/* <a href={props.link}> */}
                     <Link to={`${props.link}/subjects/${props.subject.id}`}>
-                    <div className="PathCardImg">
-                        <img src={props.subject.image} alt={props.subject.name} ></img>
+                    <div className="SubjectCardImg">
+                        <img className="SubjectCardImg" src={props.subject.image} alt={props.subject.name} ></img>
                     </div>
-                    <div className="overlay">
+                    <div className="SubjectCardOverlay">
                         <div className="text">Pick Me!</div>
                     </div>
-                    <p className="PathCardDesc">
-                        {props.subject.name}
+                    <p className="SubjectCardName">
+                        {props.subject.name} </p>
+                    <p className="SubjectCardDesc">
                         <hr />
                         {props.subject.description}
+                        <hr/>
                     </p>
                     </Link>
-                {/* </a> */}
             </div>
         </div>
     );

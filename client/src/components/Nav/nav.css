@@ -1,11 +1,12 @@
 .navbar{
     background-color: transparent;
     color:rgba(0, 0, 0, 0.75);
-    position: absolute;
+    position: relative;
     width: 100%;
     display:flex;
-    font-family: 'Raleway';
+    font-family: ‘Nunito’, sans-serif;
     padding:0;
+    /* margin-bottom: 20px; */
 
 }
 
