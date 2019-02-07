@@ -1,0 +1,110 @@
+.SubjectCardOverlay {
+  position: absolute;
+  bottom: -20px;
+  left: 20px;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+  width: 250px;
+  height: 0;
+  transition: 1s ease;
+  color:white;
+
+}
+
+.SubjectContainer:hover .SubjectCardOverlay {
+  height: 100%;
+  border: none;
+  color:white;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: ‘Nunito’, sans-serif;
+  border: 1px solid white;
+  padding: 10px;
+
+}
+
+.text:hover{
+  color:white;
+}
+
+.SubjectCardDesc{
+  padding: 20px;
+  font-size: 15px;
+  height: 275px;
+  width: 250px;
+  font-family: ‘Nunito’, sans-serif;
+  box-shadow: 10px 10px 175px rgba(116, 116, 116, 0.5);
+  color:black;
+  font-weight:bold;
+  border: 1px solid rgba(0,0,0,.1);
+  
+}
+
+.SubjectCardImg {
+  background-color: white;
+  height: 200px;
+  width: 250px;
+
+}
+
+.SubjectContainer {
+  height: 200px;
+  width: 250px;
+  display: -webkit-inline-box;
+  margin-top :0px ;
+  text-align:center;
+  margin-bottom: 300px;
+  margin-left:35px;
+  margin-right: 20px;
+  position: relative;
+  align-items:center;
+} 
+
+.ReviewButton{
+color: black;
+font-size: 20px;
+/* top: 50%;
+left: 50%; */
+/* -webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%); */
+text-align: center;
+font-family: ‘Nunito’, sans-serif;
+border: 1px solid white;
+padding: 10px;
+background-color:transparent;
+
+}
+
+.ReviewArea{
+/* margin-top:0px; */
+padding: 20px;
+font-size: 15px;
+height: 275px;
+width: 300px;
+font-family: ‘Nunito’, sans-serif;
+box-shadow: 10px 10px 175px rgba(116, 116, 116, 0.5);
+color:black;
+font-weight:bold;
+border: 1px solid rgba(0,0,0,.1);
+
+}
+
+a{
+color:white;
+}
+
+a:hover{
+color:white;
+}

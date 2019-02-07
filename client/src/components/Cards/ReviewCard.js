@@ -1,4 +1,5 @@
 import React from "react";
+import "./ResourceCard.css";
 
 function ReviewCard(props) {
     return (
