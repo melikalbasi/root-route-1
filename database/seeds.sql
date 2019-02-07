@@ -23,7 +23,7 @@ INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
 VALUES ("JQuery", "jQuery is a JavaScript Library that greatly simplifies JavaScript programming and is easy to learn.", "https://github.com/abranhe/programming-languages-logos/blob/master/src/javascript/javascript_256x256.png?raw=true", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 1);
 
 INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
-VALUES ("TypeScript", " TypeScript is designed for development of large applications and transcompiles to JavaScript.", "https://raw.githubusercontent.com/abranhe/programming-languages-logos/master/src/typescript/typescript_256x256.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 1);
+VALUES ("TypeScript", "TypeScript is designed for development of large applications and transcompiles to JavaScript.", "https://raw.githubusercontent.com/abranhe/programming-languages-logos/master/src/typescript/typescript_256x256.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 1);
 
 INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
 VALUES ("Bootstrap", "A popular front end framework", "http://pluspng.com/img-png/bootstrap-logo-png-logo-228.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 1);
@@ -51,16 +51,16 @@ VALUES ("JSON", "Represent your data in text", "https://i0.wp.com/mydevgeek.com/
 
 -- Seeds for Back End
 INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
-VALUES ("Node", "It is extremely fast and proficient with internet fundamentals such as HTTP, DNS, TCP. Also, JavaScript was a well-known language, making Node.js immediately accessible to the entire web development community.", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStuNjkPk_E8cAmmUC0iYn0IXzlMrkpqKsjfuDQdQ5yohQdMg8m", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 2);
+VALUES ("Node", "Node.js is an open-source, cross-platform JavaScript run-time environment that executes JavaScript code outside of a browser.", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStuNjkPk_E8cAmmUC0iYn0IXzlMrkpqKsjfuDQdQ5yohQdMg8m", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 2);
 
 INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
 VALUES ("Express", "A fast, unopinionated, minimalist web framework for Node.js", "https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/359/thumb/expressjslogo.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 2);
 
 INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
-VALUES ("React", "React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes. Declarative views make your code more predictable and easier to debug.", "https://res.cloudinary.com/teepublic/image/private/s--m0jciOMo--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1506059634/production/designs/1922918_1.jpg", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 2);
+VALUES ("React", "React makes it painless to create interactive UIs and will efficiently update and render just the right components when your data changes.", "https://res.cloudinary.com/teepublic/image/private/s--m0jciOMo--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1506059634/production/designs/1922918_1.jpg", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 2);
 
 INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
-VALUES ("Python", "Python was one of the first programming languages that was easy for people to pick up quickly. It is open source and is free to use even for commercial applications. It’s used as a scripting language, and programmers can easily produce readable and functional code in a very short period of time.", "https://www.andreabacciu.com/wp-content/uploads/2015/02/Python-Logo-PNG-Image.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 2);
+VALUES ("Python", "Python is used as a scripting language, and programmers can easily produce readable and functional code in a very short period of time.", "https://www.andreabacciu.com/wp-content/uploads/2015/02/Python-Logo-PNG-Image.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 2);
 
 INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
 VALUES ("Django", "A popular web framework for Python", "https://milindtech.com/wp-content/uploads/2018/02/django-logo.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 2);
@@ -78,7 +78,7 @@ INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
 VALUES ("Firebase", "A realtime backend for your web or mobile app", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxS2_g61gBhCB6F1R0rRjRm4mjd6etOIocD7jq2Ae3AKVse7C2", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 2);
 
 INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
-VALUES ("Perl", "Perl 5 is used for system administration, network programming, finance, bioinformatics, and other applications, such as for GUIs. It has been nicknamed `the Swiss Army chainsaw of scripting languages` because of its flexibility and power, and also its ugliness.", "http://blogs.perl.org/users/jakeoff/perl-logo.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 2);
+VALUES ("Perl", "Perl 5 has been nicknamed `the Swiss Army chainsaw of scripting languages` because of its flexibility and power, and also its ugliness.", "http://blogs.perl.org/users/jakeoff/perl-logo.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 2);
 
 INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
 VALUES ("Mongo", "MongoDB is a cross-platform document-oriented database program.", "http://blogs.perl.org/users/jakeoff/perl-logo.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 2);
