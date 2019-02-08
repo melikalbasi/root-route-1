@@ -11,25 +11,25 @@ import axios from "axios";
 
 class App extends Component {
 
+
+
   state = {
     user: "",
     isLoggedIn: false
   }
 
-  componentDidMount() {
-    axios.get("/protected")
-      .then(allData => {
-       let loggedIn = false;
-          if (allData.data.email.length > 0) {
-            loggedIn = true;
-          } 
-      
-        this.setState({
-          user: allData.data,
-          isLoggedIn: loggedIn
-        })
-      })
-      .catch(err => console.log(err));
+
+  async componentDidMount() {
+    let allData = await axios.get("/protected")
+    let loggedIn = false;
+    if (allData.data && allData.data.email.length > 0) {
+      loggedIn = true;
+    }
+
+    this.setState({
+      user: allData.data,
+      isLoggedIn: loggedIn
+    })
   }
 
   render() {
@@ -43,13 +43,32 @@ class App extends Component {
     return (
       <Router>
         <div>
-      <Nav user={user}/>
-      {loggedInCheck}
+
+          <Nav user={user} />
+
+          {/* {loggedInCheck} */}
           <Switch>
-            <Route exact path="/" component={LandingPage} />
-            <Route exact path="/paths" component={Paths} />
-            <Route exact path="/paths/:pathid" component={Subject} />
-            <Route exact path="/paths/:pathid/subjects/:subjectid" component={Resource} />
+            {/* THANKS to https://tylermcginnis.com/react-router-pass-props-to-components/ */}
+            <Route
+              exact path="/"
+              render={(props) => <LandingPage {...props} user={user} />}
+            />
+
+            {this.state.isLoggedIn && <Route
+              exact path="/paths"
+              render={(props) => <Paths {...props} user={user} />}
+            />}
+
+            {this.state.isLoggedIn && <Route
+              exact path="/paths/:pathid"
+              render={(props) => <Subject {...props} user={user} />}
+            />}
+
+            {this.state.isLoggedIn && <Route
+              exact path="/paths/:pathid/subjects/:subjectid"
+              render={(props) => <Resource {...props} user={user} />}
+            />}
+
             <Route component={NoMatch} />
           </Switch>
         </div>
