@@ -15,16 +15,17 @@ const style={
 class Resource extends Component {
   state = {
     resources: [],
-    review: "",
-    reviews: [],
-    error: ""
+    user: this.props.user
   };
 
   componentDidMount() {
+    console.log("USERNAME IN RESOURCES", this.state.user.name);
+    console.log("USEREMAIL IN RESOURCES", this.state.user.email);
     API.getResources(this.props.match.params.pathid, this.props.match.params.subjectid)
       .then(res => this.setState({ resources: res.data }))
       .catch(err => console.log(err));
   }
+
 
   render() {
 

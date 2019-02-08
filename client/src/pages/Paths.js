@@ -11,9 +11,13 @@ const style ={
 class Paths extends Component {
   state = {
     paths: [],
+    user: this.props.user
   };
 
   componentDidMount() {
+    // Parsing user info for reference
+    console.log("USERNAME IN PATHS", this.state.user.name);
+    console.log("USEREMAIL IN PATHS", this.state.user.email);
     this.loadPaths();
   }
 
@@ -28,7 +32,7 @@ class Paths extends Component {
       return (
         <div>
           <div style={style.PathHeader} className="PathHeader">
-          <h1>Welcome to Root Route, membername!</h1> <hr/>
+          <h1>Welcome to Root Route, {this.state.user.name}!</h1> <hr/>
           <h3>Pick a path to get started!</h3>
           </div>
         {this.state.paths.map(path => (
