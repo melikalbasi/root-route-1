@@ -11,6 +11,7 @@ const style ={
 class Paths extends Component {
   state = {
     paths: [],
+    user: this.props.user
   };
 
   componentDidMount() {
@@ -28,7 +29,7 @@ class Paths extends Component {
       return (
         <div>
           <div style={style.PathHeader} className="PathHeader">
-          <h1>Welcome to Root Route, membername!</h1> <hr/>
+          <h1>Welcome to Root Route, {this.props.user}!</h1> <hr/>
           <h3>Pick a path to get started!</h3>
           </div>
         {this.state.paths.map(path => (
