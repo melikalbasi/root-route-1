@@ -10,8 +10,9 @@ router.route("/api/paths/:pathid")
 
 router.route("/api/paths/:pathid/subjects/:subjectid")
   .get(pathsController.findResources)
+  
+router.route("/api/review/new/:resourceid/:userName/:reviewContent")  
 
-router.route("/api/review/:resourceid/:reviewContent")
   .post(pathsController.submitReview)
 
 router.route("/api/review/:resourceid")

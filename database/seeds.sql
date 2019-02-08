@@ -11,7 +11,7 @@ VALUES ("DevOps", "DevOps is the combination of cultural philosophies, practices
 
 -- Seeds for Front End
 INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
-VALUES ("HTML", "Hypertext Markup Language is the standard markup language for creating web pages and web applications. With Cascading Style Sheets and JavaScript, it forms a triad of cornerstone technologies for the World Wide Web", "https://ih1.redbubble.net/image.361593789.5453/ap,550x550,12x12,1,transparent,t.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 1);
+VALUES ("HTML", "Hypertext Markup Language is the standard markup language for creating web pages and web applications.", "https://ih1.redbubble.net/image.361593789.5453/ap,550x550,12x12,1,transparent,t.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 1);
 
 INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
 VALUES ("CSS", "CSS is a language for specifying how documents are presented to users — how they are styled, laid out, etc.", "https://neoteric.eu/wp-content/uploads/2016/03/CSS-Logo-214x300-1.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 1);
@@ -86,9 +86,6 @@ VALUES ("Mongo", "MongoDB is a cross-platform document-oriented database program
 -- Seeds for DevOps
 INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
 VALUES ("C++", "C++ is a sophisticated, efficient and a general-purpose programming language based on C", "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/140px-ISO_C%2B%2B_Logo.svg.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 3);
-
-INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
-VALUES ("Linux", "Linux is the best-known and most-used open source operating system. As an operating system, Linux is software that sits underneath all of the other software on a computer, receiving requests from those programs and relaying these requests to the computer’s hardware.", "https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 3);
 
 INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
 VALUES ("Rust", "Rust is a multi-paradigm systems programming language[12] focused on safety, especially safe concurrency.[13][14] Rust is syntactically similar to C++,[15] but is designed to provide better memory safety while maintaining high performance.", "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Rust_programming_language_black_logo.svg/144px-Rust_programming_language_black_logo.svg.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 3);
@@ -206,45 +203,41 @@ VALUES ("Make your own blog with PHP", "A small, interactive course to teach beg
 
 
 -- DEV OPS LANGUAGES-resources (C++, Linux, Rust, Go)
+-- Seeds for Go
+INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
+VALUES ("Learn How To Code: Google's Go (golang) Programming Language", "The Ultimate Comprehensive Course - Perfect for Both Beginners and Experienced Developers", "https://gust-production.s3.amazonaws.com/uploads/startup/logo_image/890575/hackr_20logo_20200_20by_20200.png", "https://hackr.io/tutorial/learn-how-to-code-googles-go-golang-programming-language" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 7);
+
+INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
+VALUES ("Learn Go Programming", "Wanna learn Go? You’re in the right place! This will be a series of tutorials to teach you Go!", "https://gust-production.s3.amazonaws.com/uploads/startup/logo_image/890575/hackr_20logo_20200_20by_20200.png", "https://hackr.io/tutorial/learn-go-programming" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 7);
+
+INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
+VALUES ("Learn how to build a web application with Go", " If you are using PHP/Python/Ruby, you will learn how to build a web application with Go.", "https://gust-production.s3.amazonaws.com/uploads/startup/logo_image/890575/hackr_20logo_20200_20by_20200.png", "https://hackr.io/tutorial/build-web-application-with-golang" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 7);
+
+
 -- Seeds for C++
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("Node", "Start here", "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png", "https://blog.prototypr.io/a-little-introduction-to-html-2f82cd9f602c" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 11);
+VALUES ("Advanced C++ Programming Training Course", "Take your C++ Programming Training Course Will Take Your Skills To The Next Level.", "https://www.udemy.com/staticx/udemy/images/v6/default-meta-image.png", "https://www.udemy.com/advanced-c-programming/" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 7);
 
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("Node", "Try this", "https://udemy-images.udemy.com/course/750x422/59535_1f48_6.jpg", "https://blog.prototypr.io/a-little-introduction-to-html-2f82cd9f602c" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 11);
+VALUES ("Learn C++", "Learn one of the most powerful programming languages in the world and become a rockstar developer", "https://pentagram-production.imgix.net/1cbbfce1-48d5-4257-95e5-745c10e6492e/eo_codecademy_01.jpg?rect=375%2C0%2C2256%2C1412&w=880&fit=crop&fm=jpg&q=70&auto=format&h=548", "https://www.codecademy.com/learn/learn-c-plus-plus" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 7);
 
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("Node - A guide", "Oh my", "https://static.makeuseof.com/wp-content/uploads/2017/09/HTML-Effects-Featured-670x335.jpg", "https://blog.prototypr.io/a-little-introduction-to-html-2f82cd9f602c" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 11);
+VALUES ("Introduction to C#", "In this course, you will be introduced to the C# language and the world of .NET programming.", "https://cdn-blog.lawrencemcdaniel.com/wp-content/uploads/2018/02/22125436/open-edx-banner.jpg", "https://www.edx.org/course/introduction-to-c-sharp-3" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 7);
 
 
 -- Seeds for Linux
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("Express", "Start here", "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png", "https://blog.prototypr.io/a-little-introduction-to-html-2f82cd9f602c" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 12);
+VALUES ("Introduction to Linux", "Never learned Linux? Want a refresh? Take this course free or get a verified certificate for $99!", "https://cdn-blog.lawrencemcdaniel.com/wp-content/uploads/2018/02/22125436/open-edx-banner.jpg", "https://www.edx.org/course/introduction-to-linux" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 7);
 
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("Express", "Try this", "https://udemy-images.udemy.com/course/750x422/59535_1f48_6.jpg", "https://blog.prototypr.io/a-little-introduction-to-html-2f82cd9f602c" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 12);
-
-INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("Express", "Oh my", "https://static.makeuseof.com/wp-content/uploads/2017/09/HTML-Effects-Featured-670x335.jpg", "https://blog.prototypr.io/a-little-introduction-to-html-2f82cd9f602c" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 12);
-
+VALUES ("Introduction to DevOps: Transforming and Improving Operations", "Learn how to transform your organization using the principles and practices of DevOps.", "https://cdn-blog.lawrencemcdaniel.com/wp-content/uploads/2018/02/22125436/open-edx-banner.jpg", "https://www.edx.org/course/introduction-to-devops-transforming-and-improving-operations" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 7);
 
 -- Seeds for Rust
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
 VALUES ("The Rust Programming Language Book", "Start here", "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png", "https://doc.rust-lang.org/book/second-edition/" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 12);
 
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("Are We Web Yet?", "You can build stuff!", "https://udemy-images.udemy.com/course/750x422/59535_1f48_6.jpg", "http://www.arewewebyet.org/" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 13);
+VALUES ("The Rust Programming Language", "Learn a modern, powerful yet safe systems programming language!", "https://www.udemy.com/staticx/udemy/images/v6/default-meta-image.png", "https://www.udemy.com/rust-lang/" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 13);
 
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
 VALUES ("Why is Rust Difficult?", "Understand Rust.", "https://static.makeuseof.com/wp-content/uploads/2017/09/HTML-Effects-Featured-670x335.jpg", "https://vorner.github.io/difficult.html" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 13);
-
-
--- Seeds for Go
-INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("React", "Start here", "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png", "https://blog.prototypr.io/a-little-introduction-to-html-2f82cd9f602c" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 14);
-
-INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("React", "Try this", "https://udemy-images.udemy.com/course/750x422/59535_1f48_6.jpg", "https://blog.prototypr.io/a-little-introduction-to-html-2f82cd9f602c" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 14);
-
-INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("React", "Oh my", "https://static.makeuseof.com/wp-content/uploads/2017/09/HTML-Effects-Featured-670x335.jpg", "https://blog.prototypr.io/a-little-introduction-to-html-2f82cd9f602c" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 14);
