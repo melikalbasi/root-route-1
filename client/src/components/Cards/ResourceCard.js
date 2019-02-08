@@ -98,7 +98,7 @@ class ResourceCard extends Component {
                             <p className="ResourceCardDesc">
 
                                 <hr />{this.state.description} <hr />
-                                <button type="button" className="DescriptionButton" onClick={this.showModal}>Open Me</button>
+                                <button type="button" className="DescriptionButton" onClick={this.showModal}>Reviews</button>
                             </p>
 
                         )}
