@@ -11,7 +11,7 @@ VALUES ("DevOps", "DevOps is the combination of cultural philosophies, practices
 
 -- Seeds for Front End
 INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
-VALUES ("HTML", "Hypertext Markup Language is the standard markup language for creating web pages and web applications. With Cascading Style Sheets and JavaScript, it forms a triad of cornerstone technologies for the World Wide Web", "https://ih1.redbubble.net/image.361593789.5453/ap,550x550,12x12,1,transparent,t.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 1);
+VALUES ("HTML", "Hypertext Markup Language is the standard markup language for creating web pages and web applications.", "https://ih1.redbubble.net/image.361593789.5453/ap,550x550,12x12,1,transparent,t.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 1);
 
 INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
 VALUES ("CSS", "CSS is a language for specifying how documents are presented to users — how they are styled, laid out, etc.", "https://neoteric.eu/wp-content/uploads/2016/03/CSS-Logo-214x300-1.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 1);

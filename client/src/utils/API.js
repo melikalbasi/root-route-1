@@ -13,8 +13,8 @@ export default {
   getResources: function(pathid, subjectid) {
     return axios.get(`/api/paths/${pathid}/subjects/${subjectid}`);
   },
-  submitReview: function(resourceid, reviewContent) {
-    return axios.post(`/api/review/${resourceid}/${reviewContent}`);
+  submitReview: function(resourceid, reviewContent, userName) {
+    return axios.post(`/api/review/new/${resourceid}/${userName}/${reviewContent}`);
   },
   getReviews: function(resourceid) {
     return axios.get(`/api/review/${resourceid}`);
