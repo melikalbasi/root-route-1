@@ -1,18 +1,26 @@
-import React from "react";
+import React, { Component } from "react";
 import "./nav.css";
+import { withRouter } from "react-router";
+import axios from "axios";
 
-function Nav(props) {
-  return (
-    <nav className="navbar">
 
-      <a href="/paths">
-        <span>Root Route</span>
-      </a>
-      <a className="navlink" href="/dashboard">
-        <span>Sign Out</span>
-      </a>
-    </nav>
-  );
+class Nav extends Component {
+
+  render() {
+    return (
+
+      <nav className="navbar">
+
+        <a href="/paths">
+          <span>Root Route</span>
+        </a>
+        
+          <a onClick={() => this.props.handleSignOut()}>Sign out</a>
+        
+      </nav>
+
+    )
+  }
 }
 
-export default Nav;
+export default withRouter(Nav);
