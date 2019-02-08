@@ -12,10 +12,16 @@ router.route("/api/paths/:pathid/subjects/:subjectid")
   .get(pathsController.findResources)
   
 router.route("/api/review/new/:resourceid/:userName/:reviewContent")  
+
   .post(pathsController.submitReview)
 
-router.route("/api/review/:resourceid")  
+router.route("/api/review/:resourceid")
   .get(pathsController.getReviews)
+
+router.route("/api/logout").get(function () {
+  req.logout()
+  res.redirect('/');
+})
 
 
 // If no API routes are hit, send the React app

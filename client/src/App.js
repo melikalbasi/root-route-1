@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
 import Paths from "./pages/Paths";
 import NoMatch from "./pages/NoMatch";
 import Subject from "./pages/Subjects";
@@ -10,8 +10,6 @@ import axios from "axios";
 
 
 class App extends Component {
-
-
 
   state = {
     user: "",
@@ -32,6 +30,19 @@ class App extends Component {
     })
   }
 
+  signOut = () => {
+    axios.get("/logout")
+    .then(() => {
+      this.setState({ 
+        user: "", 
+        isLoggedIn: false 
+      })
+      console.log("hi there");
+      return <Redirect to='/' />
+      })
+      .catch(err => console.log(err));
+  }
+
   render() {
     const {
       isLoggedIn, user
@@ -46,8 +57,8 @@ class App extends Component {
       <Router>
         <div>
 
-          <Nav user={user} />
-
+          <Nav user={user} handleSignOut={this.signOut} />
+    
           {/* {loggedInCheck} */}
           <Switch>
             {/* THANKS to https://tylermcginnis.com/react-router-pass-props-to-components/ */}
@@ -71,7 +82,7 @@ class App extends Component {
               render={(props) => <Resource {...props} user={user} />}
             />}
 
-            <Route component={NoMatch} />
+            <Route component={LandingPage} />
           </Switch>
         </div>
       </Router>

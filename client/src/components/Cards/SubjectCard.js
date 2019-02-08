@@ -1,29 +1,56 @@
-import React from "react";
+import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./SubjectCard.css";
 
-function SubjectCard(props) {
-    return (
-        <div className="SubjectContainer">
-            <div key={props.subject.id}>
-                    <Link to={`${props.link}/subjects/${props.subject.id}`}>
+class SubjectCard extends Component {
+
+    state = {
+        id: this.props.subject.id,
+        name: this.props.subject.name,
+        link: this.props.subject.link,
+        image: this.props.subject.image,
+        description: this.props.subject.description,
+        innerLink: this.props.innerLink,
+        descriptionsDisplayed: true,
+    };
+
+
+    toggleDescriptions = () => {
+        if (this.state.descriptionsDisplayed === false) {
+            this.setState({ descriptionsDisplayed: true });
+        } else {
+            this.setState({ descriptionsDisplayed: false });
+        }
+    }
+
+    render() {
+        return (
+            <div className="SubjectContainer">
+                <div key={this.state.id}>
                     <div className="SubjectCardImg">
-                        <img className="SubjectCardImg" src={props.subject.image} alt={props.subject.name} ></img>
+                        <img className="SubjectCardImg" src={this.state.image} alt={this.state.name} ></img>
                     </div>
                     <div className="SubjectCardOverlay">
-                        <div className="text">Pick Me!</div>
+                        <div className="text">
+                            <a href={`${this.state.link}/subjects/${this.state.id}`}>{this.state.name}</a>
+                        </div>
                     </div>
                     <p className="SubjectCardName">
-                        {props.subject.name} </p>
-                    <p className="SubjectCardDesc">
-                        <hr />
-                        {props.subject.description}
-                        <hr/>
+                        <button className="DescriptionButton" onClick={this.toggleDescriptions}>{this.state.descriptionsDisplayed ? "Overview" : "Hide"}</button>
+                        
                     </p>
-                    </Link>
+                    {this.state.descriptionsDisplayed ? true : (
+
+                        <p className="SubjectCardDesc">
+                            <hr />
+                            {this.state.description}
+                            
+                        </p>
+                    )}
+                </div>
             </div>
-        </div>
-    );
+        );
+    }
 }
 
 export default SubjectCard;

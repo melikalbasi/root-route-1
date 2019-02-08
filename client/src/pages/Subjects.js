@@ -30,7 +30,7 @@ class Subject extends Component {
     return (
       <div>
         <div className="SubjectHeader" style={style.SubjectHeader}>
-        <h3>Click on any technology to find the best online courses</h3>
+        <h3 style={{padding:50}}>Click on any technology to find the best online courses</h3>
         </div>
         {this.state.subjects.map(subject => (
           <SubjectCard
