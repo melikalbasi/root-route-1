@@ -1,23 +1,24 @@
 import React, { Component } from "react";
-// import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
-
 import SubjectCard from "../components/Cards/SubjectCard";
 
 const style = {
   SubjectHeader:{
-    textAlign: "center",
-
+    textAlign: "center"
   }
 }
 
 class Subject extends Component {
   state = {
-    subjects: []
+    subjects: [],
+    user: this.props.user
   };
 
 
   componentDidMount() {
+    // Parsing user info for reference
+    console.log("USERNAME IN SUBJECTS", this.state.user.name);
+    console.log("USEREMAIL IN SUBJECTS", this.state.user.email);
     API.getSubjects(this.props.match.params.pathid)
       .then(res => this.setState({ subjects: res.data }))
       .catch(err => console.log(err));
