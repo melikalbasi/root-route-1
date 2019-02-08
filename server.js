@@ -40,17 +40,26 @@ app.get(
   }
 );
 
+app.get('/logout', function(req, res) {
+  console.log("logged out!");
+  console.log("are you there? ", user)
+  user = null;
+  req.logout();
+  res.redirect('/');
+});
+
+
 // Checks if a user is logged in
-const accessProtectionMiddleware = (req, res, next) => { 
-  console.log("RES AUTHENTICATED ", req.isAuthenticated()) 
-  if (req.isAuthenticated()) {
-    next();
-  } else {
-    res.status(403).json({
-      message: 'must be logged in to continue',
-    });
-  }
-};
+// const accessProtectionMiddleware = (req, res, next) => { 
+//   console.log("RES AUTHENTICATED ", req.isAuthenticated()) 
+//   if (req.isAuthenticated()) {
+//     next();
+//   } else {
+//     res.status(403).json({
+//       message: 'must be logged in to continue',
+//     });
+//   }
+// };
 
 // A secret endpoint accessible only to logged-in users
 app.get('/protected', (req, res) => {  
