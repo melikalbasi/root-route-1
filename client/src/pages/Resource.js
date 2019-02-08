@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-// import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
 import ResourceCard from "../components/Cards/ResourceCard";
-// import ReviewForm from "../components/Review/";
+
 
 const style={
   ResourceHeader:{
