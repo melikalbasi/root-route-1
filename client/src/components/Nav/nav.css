@@ -7,6 +7,7 @@
     font-family: ‘Nunito’, sans-serif;
     padding:0;
     /* margin-bottom: 20px; */
+    height: 80px
 
 }
 
@@ -34,7 +35,7 @@ a:hover{
 }
 
 a span{
-    position:relaive;
+    position:relative;
     transition: 0.5s
 }
 
@@ -48,12 +49,8 @@ a span:after{
 
 }
 
-a:hover span{
-    /* font-size:1.5rem; */
-
-}
-
 a:hover span:after {
     opacity:1;
     
 }
+
