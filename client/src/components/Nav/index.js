@@ -10,12 +10,13 @@ class Nav extends Component {
     return (
 
       <nav className="navbar">
-
-        <a href="/paths">
+{this.props.user ? 
+  <a href="/paths">
           <span>Root Route</span>
-        </a>
-        
-          <a onClick={() => this.props.handleSignOut()}>Sign out</a>
+        </a> : <span>Root Route</span>
+}
+        {this.props.user ? 
+          <a onClick={() => this.props.handleSignOut()}>Sign out</a> : null}
         
       </nav>
 
