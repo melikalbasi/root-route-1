@@ -58,6 +58,10 @@
 
 }
 
+p.SubjectCardName {
+  background-color: white;
+}
+
 .SubjectCardName {
   padding: 5px;
   font-size: 12px;
