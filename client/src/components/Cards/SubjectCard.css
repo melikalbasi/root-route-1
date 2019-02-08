@@ -1,7 +1,7 @@
 .SubjectCardOverlay {
   position: absolute;
   bottom: -20px;
-  left: 20px;
+  /* left: 20px; */
   right: 0;
   background-color: rgba(0, 0, 0, 0.75);
   overflow: hidden;
@@ -9,6 +9,7 @@
   height: 0;
   transition: 1s ease;
   color:white;
+  transform: translateY(-20px);
 
 }
 

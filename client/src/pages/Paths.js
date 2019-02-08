@@ -33,8 +33,7 @@ class Paths extends Component {
       return (
         <div>
           <div style={style.PathHeader} className="PathHeader">
-          <h1>Welcome to Root Route, {this.state.user.name}!</h1> <hr/>
-          <h3>Pick a path to get started!</h3>
+          <h3 style={{padding:50}}>Pick a path to get started!</h3>
           </div>
         {this.state.paths.map(path => (
           

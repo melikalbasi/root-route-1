@@ -31,7 +31,7 @@ class Resource extends Component {
     return (
         <div>
           <div className="ResourceHeader" style={style.ResourceHeader}>
-          <h3>Click any course to start mastering skills</h3>
+          <h3 style={{padding:50}}>Click any course to start mastering skills</h3>
           </div>
 
         {this.state.resources.map(resource => (
