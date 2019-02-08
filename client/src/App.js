@@ -38,8 +38,10 @@ class App extends Component {
     } = this.state
     let loggedInCheck = null;
     if (isLoggedIn) {
-      loggedInCheck = (<h1>Logged In!</h1>)
+      loggedInCheck = (<h1>Logged In!</h1>);
+      console.log(loggedInCheck);
     }
+    
     return (
       <Router>
         <div>

@@ -40,6 +40,7 @@ class Resource extends Component {
           <ResourceCard
             resource={resource}
             innerLink={`/paths/${this.props.match.params.pathid}/subjects/${this.props.match.params.subjectid}`}
+            user={this.state.user}
           >
           </ResourceCard>
         ))}

@@ -88,9 +88,6 @@ INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
 VALUES ("C++", "C++ is a sophisticated, efficient and a general-purpose programming language based on C", "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/140px-ISO_C%2B%2B_Logo.svg.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 3);
 
 INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
-VALUES ("Linux", "Linux is the best-known and most-used open source operating system. As an operating system, Linux is software that sits underneath all of the other software on a computer, receiving requests from those programs and relaying these requests to the computer’s hardware.", "https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 3);
-
-INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
 VALUES ("Rust", "Rust is a multi-paradigm systems programming language[12] focused on safety, especially safe concurrency.[13][14] Rust is syntactically similar to C++,[15] but is designed to provide better memory safety while maintaining high performance.", "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Rust_programming_language_black_logo.svg/144px-Rust_programming_language_black_logo.svg.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 3);
 
 INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
