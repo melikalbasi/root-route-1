@@ -34,7 +34,7 @@ a:hover{
 }
 
 a span{
-    position:relaive;
+    position:relative;
     transition: 0.5s
 }
 
@@ -45,11 +45,6 @@ a span:after{
     top:0;
     /* font-size:1rem; */
     transition: 0.5s;
-
-}
-
-a:hover span{
-    /* font-size:1.5rem; */
 
 }
 

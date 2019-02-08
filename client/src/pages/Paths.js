@@ -19,6 +19,7 @@ class Paths extends Component {
     console.log("USERNAME IN PATHS", this.state.user.name);
     console.log("USEREMAIL IN PATHS", this.state.user.email);
     this.loadPaths();
+ 
   }
 
   loadPaths = () => {
@@ -37,7 +38,9 @@ class Paths extends Component {
           </div>
         {this.state.paths.map(path => (
           
-          <PathCard path={path}></PathCard>
+          <PathCard 
+          path={path}  >
+          </PathCard>
         ))}
       </div>
     );
