@@ -35,7 +35,7 @@ render() {
                     </div>                
                     
                     <div className="PathCardOverlay">
-                        <Link className="PathCardLink" to={"/paths/" + this.state.id}>Pick Me! </Link>
+                        <Link className="PathCardLink" to={"/paths/" + this.state.id}>{this.state.name}</Link>
                     </div>               
                     <p className="PathCardName">
                     {this.state.name} </p>
