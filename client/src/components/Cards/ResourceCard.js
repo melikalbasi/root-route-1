@@ -20,7 +20,8 @@ class ResourceCard extends Component {
         innerLink: this.props.innerLink,
         reviewsDisplayed: true,
         descriptionsDisplayed: true,
-        show: false
+        show: false,
+        user: this.props.user
     };
 
 
@@ -48,7 +49,7 @@ class ResourceCard extends Component {
 
     handleFormSubmit = event => {
         event.preventDefault();
-        API.submitReview(this.state.id, this.state.reviewContent)
+        API.submitReview(this.state.id, this.state.user.name, this.state.reviewContent)
             .then(res => {
                 if (res.data.status === "error") {
                     throw new Error(res.data.message);
@@ -83,21 +84,22 @@ class ResourceCard extends Component {
                         </div>
                         <div className="ResourceCardOverlay">
                             <div className="text">
-                                <a href={this.state.link}>Pick Me!</a>
+                                <a href={this.state.link}>{this.state.name}</a>
                             </div>
                         </div>
 
                         <p className="ResourceCardName">
-                            {this.state.name} </p>
-                        <p className="ResourceCardButton">
-                            <button className="DescriptionButton" onClick={this.toggleDescriptions}>{this.state.descriptionsDisplayed ? "Overview" : "Hide"}</button>
+                            <button className="DescriptionButton" onClick={this.toggleDescriptions}>
+                                {this.state.descriptionsDisplayed ? "Overview" : "Hide"}
+                            </button>
                         </p>
+
 
                         {this.state.descriptionsDisplayed ? true : (
                             <p className="ResourceCardDesc">
 
                                 <hr />{this.state.description} <hr />
-                                <button type="button" onClick={this.showModal}>Open Me</button>
+                                <button type="button" className="DescriptionButton" onClick={this.showModal}>Reviews</button>
                             </p>
 
                         )}
@@ -109,7 +111,8 @@ class ResourceCard extends Component {
                     {this.state.reviews.map(review => (
 
 
-                        <ReviewCard review={review} />
+                        <ReviewCard 
+                            review={review} />
                     ))}
                     <ReviewForm
                         handleFormSubmit={this.handleFormSubmit}

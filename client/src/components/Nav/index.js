@@ -18,7 +18,7 @@ class Nav extends Component {
 
         {this.props.user ?
         <span>
-        Welcome to Root Route {this.props.user.name}!
+        Welcome to Root Route, {this.props.user.name}!
       </span> : null
 
       }

@@ -33,8 +33,9 @@ module.exports = {
 
   submitReview: function(req, res) {
     db.Review.create({
+      resourceid: req.params.resourceid,
       reviewContent: req.params.reviewContent,
-      resourceid: req.params.resourceid
+      userName: req.params.userName
     }).then(allData => {
       res.json(allData)
     }).catch(err => res.status(422).json(err));
