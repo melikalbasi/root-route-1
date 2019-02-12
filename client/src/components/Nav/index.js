@@ -12,8 +12,12 @@ class Nav extends Component {
       <nav className="navbar">
         {this.props.user ?
           <a href="/paths">
-            <span><img style={{ backgroundColor: "transparent", filter: "brightness(0) invert(1)", height: 40, width: "auto" }} src="https://files.slack.com/files-pri/TCA754D6Z-FG11R5FPD/rootroute.png"></img></span>
-          </a> : <span><img style={{ backgroundColor: "transparent", filter: "brightness(0) invert(1)", height: 40, width: "auto" }} src="https://files.slack.com/files-pri/TCA754D6Z-FG11R5FPD/rootroute.png"></img></span>
+            <span> 
+              <img style={{ backgroundColor: "transparent", filter: "brightness(0) invert(1)", height: 40, width: "auto" }} src="https://i.imgur.com/e62cVoo.png"></img>
+              </span>
+          </a> : <span>
+            <img style={{ backgroundColor: "transparent", filter: "brightness(0) invert(1)", height: 40, width: "auto" }} src="https://i.imgur.com/e62cVoo.png"></img>
+            </span>
         }
 
         {this.props.user ?
