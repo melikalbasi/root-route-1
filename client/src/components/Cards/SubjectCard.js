@@ -31,22 +31,22 @@ class SubjectCard extends Component {
                         <img className="SubjectCardImg" src={this.state.image} alt={this.state.name} ></img>
                     </div>
                     <div className="SubjectCardOverlay">
-                        <Link to={`${this.state.link}/subjects/${this.state.id}`}> Pick Me!</Link>
+                        <div className="text">
+                            <a href={`${this.state.link}/subjects/${this.state.id}`}>{this.state.name}</a>
+                        </div>
                     </div>
                     <p className="SubjectCardName">
-                        {this.state.name} </p>
-                        <p className="SubjectCardButton">
-                            <button className="DescriptionButton" onClick={this.toggleDescriptions}>{this.state.descriptionsDisplayed ? "Overview" : "Hide"}</button>
-                        </p>
-
-                        {this.state.descriptionsDisplayed ? true : (
-                            
-                    <p className="SubjectCardDesc">
-                        <hr />
-                        {this.state.description}
-                        <hr />
+                        <button className="DescriptionButton" onClick={this.toggleDescriptions}>{this.state.descriptionsDisplayed ? "Overview" : "Hide"}</button>
+                        
                     </p>
-  )}
+                    {this.state.descriptionsDisplayed ? true : (
+
+                        <p className="SubjectCardDesc">
+                            <hr />
+                            {this.state.description}
+                            
+                        </p>
+                    )}
                 </div>
             </div>
         );

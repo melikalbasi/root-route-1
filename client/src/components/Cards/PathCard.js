@@ -35,13 +35,13 @@ render() {
                     </div>                
                     
                     <div className="PathCardOverlay">
-                        <Link className="PathCardLink" to={"/paths/" + this.state.id}>Pick Me! </Link>
+                        <Link className="PathCardLink" to={"/paths/" + this.state.id}>{this.state.name}</Link>
                     </div>               
                     <p className="PathCardName">
-                    {this.state.name} </p>
-                    <p className="PathCardButton">
+                    {this.state.name}   <p className="PathCardButton">
                             <button className="DescriptionButton" onClick={this.toggleDescriptions}>{this.state.descriptionsDisplayed ? "Overview" : "Hide"}</button>
-                        </p>
+                        </p> </p>
+                 
 
                         {this.state.descriptionsDisplayed ? true : (
                            

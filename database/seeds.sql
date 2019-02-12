@@ -11,7 +11,7 @@ VALUES ("DevOps", "DevOps is the combination of cultural philosophies, practices
 
 -- Seeds for Front End
 INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
-VALUES ("HTML", "Hypertext Markup Language is the standard markup language for creating web pages and web applications. With Cascading Style Sheets and JavaScript, it forms a triad of cornerstone technologies for the World Wide Web", "https://ih1.redbubble.net/image.361593789.5453/ap,550x550,12x12,1,transparent,t.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 1);
+VALUES ("HTML", "Hypertext Markup Language is the standard markup language for creating web pages and web applications.", "https://ih1.redbubble.net/image.361593789.5453/ap,550x550,12x12,1,transparent,t.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 1);
 
 INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
 VALUES ("CSS", "CSS is a language for specifying how documents are presented to users — how they are styled, laid out, etc.", "https://neoteric.eu/wp-content/uploads/2016/03/CSS-Logo-214x300-1.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 1);
@@ -86,10 +86,12 @@ INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
 VALUES ("C++", "C++ is a sophisticated, efficient and a general-purpose programming language based on C", "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/140px-ISO_C%2B%2B_Logo.svg.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 3);
 
 INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
+
 VALUES ("Linux", "Linux is the best-known and most-used open source operating system.", "https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 3);
 
 INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
 VALUES ("Rust", "Rust is a multi-paradigm systems programming language focused on safety, especially safe concurrency.", "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Rust_programming_language_black_logo.svg/144px-Rust_programming_language_black_logo.svg.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 3);
+
 
 INSERT INTO Subjects (name, description, image, createdAt, updatedAt, pathid)
 VALUES ("Go", "Go (also called GoLang) is a programming language developed by Google engineers to create dependable and efficient software.", "https://sdtimes.com/wp-content/uploads/2018/02/golang.sh_-490x490.png", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 3);
@@ -332,9 +334,14 @@ VALUES ("MongoDB Basics", "This course will provide an introduction to MongoDB, 
 
 
 -- DEV OPS LANGUAGES-resources (C++, Linux, Rust, Go)
--- Seeds for C++
+-- Seeds for Go
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
+<<<<<<< HEAD
 VALUES ("Advanced C++ Programming Training Course", "Take your C++ Programming Training Course Will Take Your Skills To The Next Level.", "https://www.udemy.com/staticx/udemy/images/v6/default-meta-image.png", "https://www.udemy.com/advanced-c-programming/" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 23);
+=======
+
+VALUES ("Advanced C++ Programming Training Course", "Take your C++ Programming Training Course Will Take Your Skills To The Next Level.", "https://www.udemy.com/staticx/udemy/images/v6/default-meta-image.png", "https://www.udemy.com/advanced-c-programming/?utm_source=adwords-learn&utm_medium=udemyads&utm_campaign=NEW-AW-PROS-TECH-US-DSA-1-EN-ENG_._ci__._sl_ENG_._vi_TECH_._sd_All_._la_EN_._&utm_content=deal4584&utm_term=_._ag_60674438611_._ad_311050878850_._de_c_._dm__._pl__._ti_aud-296047865446:dsa-304639795903_._li_9032076_._pd__._&gclid=Cj0KCQiAheXiBRD-ARIsAODSpWPzP2Mqfg5Soq80T4hfKfsj2kVFZZaUhqQz5O8TonYrfsgfJXUvcesaAvlcEALw_wcB" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 23);
+>>>>>>> 288b02dd850d73758f6aa10076fa9e28d5934678
 
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
 VALUES ("Learn C++", "Learn one of the most powerful programming languages in the world and become a rockstar developer", "https://pentagram-production.imgix.net/1cbbfce1-48d5-4257-95e5-745c10e6492e/eo_codecademy_01.jpg?rect=375%2C0%2C2256%2C1412&w=880&fit=crop&fm=jpg&q=70&auto=format&h=548", "https://www.codecademy.com/learn/learn-c-plus-plus" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 23);
@@ -343,8 +350,10 @@ INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, sub
 VALUES ("Introduction to C#", "In this course, you will be introduced to the C# language and the world of .NET programming.", "https://cdn-blog.lawrencemcdaniel.com/wp-content/uploads/2018/02/22125436/open-edx-banner.jpg", "https://www.edx.org/course/introduction-to-c-sharp-3" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 23);
 
 
--- Seeds for Linux
+
+-- Seeds for C++
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
+
 VALUES ("Introduction to Linux", "Never learned Linux? Want a refresh? Take this course free or get a verified certificate for $99!", "https://cdn-blog.lawrencemcdaniel.com/wp-content/uploads/2018/02/22125436/open-edx-banner.jpg", "https://www.edx.org/course/introduction-to-linux" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 24);
 
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
@@ -365,8 +374,9 @@ INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, sub
 VALUES ("Why is Rust Difficult?", "Understand Rust.", "https://static.makeuseof.com/wp-content/uploads/2017/09/HTML-Effects-Featured-670x335.jpg", "https://vorner.github.io/difficult.html" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 25);
 
 
--- Seeds for Go
+-- Seeds for Rust
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
+
 VALUES ("Learn How To Code: Google's Go (golang) Programming Language", "The Ultimate Comprehensive Course - Perfect for Both Beginners and Experienced Developers", "https://gust-production.s3.amazonaws.com/uploads/startup/logo_image/890575/hackr_20logo_20200_20by_20200.png", "https://hackr.io/tutorial/learn-how-to-code-googles-go-golang-programming-language" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 26);
 
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
@@ -374,3 +384,4 @@ VALUES ("Learn Go Programming", "Wanna learn Go? You’re in the right place! Th
 
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
 VALUES ("Learn how to build a web application with Go.", "If you are using PHP/Python/Ruby, you will learn how to build a web application with Go.", "https://gust-production.s3.amazonaws.com/uploads/startup/logo_image/890575/hackr_20logo_20200_20by_20200.png", "https://hackr.io/tutorial/build-web-application-with-golang" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 26);
+
