@@ -136,7 +136,7 @@ VALUES ("A Beginners Guide to Advanced JavaScript & ES6 - ES2017", "Learn tough 
 
 -- Seeds for JQuery
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("The Complete jQuery Course: From Beginner To Advanced!", "Use jQuery to create stunning animations, provide fast feedback forms, handle all user events and perform Ajax calls.", "https://www.udemy.com/staticx/udemy/images/v6/default-meta-image.png", "https://www.udemy.com/jquery-tutorial/?utm_source=adwords-learn&utm_medium=udemyads&utm_campaign=NEW-AW-PROS-TECH-US-DSA-1-EN-ENG_._ci__._sl_ENG_._vi_TECH_._sd_All_._la_EN_._&utm_content=deal4584&utm_term=_._ag_60674438611_._ad_311050878850_._de_c_._dm__._pl__._ti_aud-296047865446:dsa-304639795903_._li_9032076_._pd__._&gclid=Cj0KCQiAheXiBRD-ARIsAODSpWNUs2CfA1-JALezz5z_-noVQSNwFKXJpzOqK-zB-M8v2oMdfMe4VNYaAlWyEALw_wcB", 4);
+VALUES ("The Complete jQuery Course: From Beginner To Advanced!", "Use jQuery to create stunning animations, provide fast feedback forms, handle all user events and perform Ajax calls.", "https://www.udemy.com/staticx/udemy/images/v6/default-meta-image.png", "https://www.udemy.com/jquery-tutorial/", 4);
 
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
 VALUES ("Introduction to jQuery", "Learn the basics of jQuery, a JavaScript library that allows you to easily add dynamic behavior to static web pages.", "https://pentagram-production.imgix.net/1cbbfce1-48d5-4257-95e5-745c10e6492e/eo_codecademy_01.jpg?rect=375%2C0%2C2256%2C1412&w=880&fit=crop&fm=jpg&q=70&auto=format&h=548", "https://www.codecademy.com/learn/learn-jquery", 4);

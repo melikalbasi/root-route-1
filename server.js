@@ -35,7 +35,7 @@ app.get(
       console.log(req.user)
       var token = req.user.token;
       console.log(token)
-      res.redirect("http://localhost:3000/paths");
+      // res.redirect("http://localhost:3000/paths");
       // res.redirect("http://localhost:3000?token=" + token);
   }
 );
