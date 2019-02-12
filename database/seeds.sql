@@ -106,7 +106,7 @@ INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, sub
 VALUES ("Learn HTML in 12 Minutes", "This is a great introduction to HTML in just a few minutes. You'll get a feel for how HTML files are started along with some basic tags.", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0qSA_k1iE99Tf-0gAGSdLbgkUTTM7AdX5OFKGRIQqJbEXXqVA", "https://www.youtube.com/watch?v=bWPMSSsVdPk" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 1);
 
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("Learn the Basics of HTML", "Learn the basics of HTML with this interactive Codecademy course. The introduction here gives an overview of the structure, purpose, and syntax of the language.", "https://pentagram-production.imgix.net/1cbbfce1-48d5-4257-95e5-745c10e6492e/eo_codecademy_01.jpg?rect=375%2C0%2C2256%2C1412&w=880&fit=crop&fm=jpg&q=70&auto=format&h=548", "https://www.codecademy.com/learn/learn-html" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 1);
+VALUES ("Learn the Basics of HTML", "Learn the basics of HTML with this interactive Codecademy course. The introduction here gives an overview of the structure, purpose, and syntax of the language.", "https://pentagram-production.imgix.net/1cbbfce1-48d5-4257-95e5-745c10e6492e/eo_codecademy_01.jpg?", "https://www.codecademy.com/learn/learn-html" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 1);
 
 
 -- Seeds for CSS
@@ -122,25 +122,25 @@ VALUES ("What Are The Benefits of Using a CSS Framework?", "Learn why to use CSS
 
 -- Seeds for Javascript
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("The Complete JavaScript Course 2019: Build Real Projects!", "Master JavaScript with the most complete course on the market! Projects, challenges, quizzes, ES6+, OOP, AJAX, Webpack", "https://udemy-images.udemy.com/course/750x422/59535_1f48_6.jpg", "https://www.udemy.com/the-complete-javascript-course/?ranMID=39197&ranEAID=EXclnL5BfX4&ranSiteID=EXclnL5BfX4-KAXkjOI1981K2hQNlN.bzA&LSNPUBID=EXclnL5BfX4" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 3);
+VALUES ("The Complete JavaScript Course 2019: Build Real Projects!", "Master JavaScript with the most complete course on the market! Projects, challenges, quizzes, ES6+, OOP, AJAX, Webpack", "https://udemy-images.udemy.com/course/750x422/59535_1f48_6.jpg", "https://www.udemy.com/the-complete-javascript-course/" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 3);
 
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
 VALUES ("JavaScript: Understanding the Weird Parts", "An advanced JavaScript course for everyone! Scope, closures, prototypes, 'this', build your own framework, and more.", "https://udemy-images.udemy.com/course/750x422/59535_1f48_6.jpg", "https://www.udemy.com/understand-javascript/" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 3);
 
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("A Beginners Guide to Advanced JavaScript & ES6 - ES2017", "Learn tough topics like: 'this', scope, 'new' , hoisting, ES6, & More! Take your JS knowledge to the next level!", "https://udemy-images.udemy.com/course/750x422/59535_1f48_6.jpg", "https://www.udemy.com/advanced-javascript-course/?ranMID=39197&ranEAID=EXclnL5BfX4&ranSiteID=EXclnL5BfX4-tQLvEUs2rvYMekhZ0kQq_w&LSNPUBID=EXclnL5BfX4" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 3);
+VALUES ("A Beginners Guide to Advanced JavaScript & ES6 - ES2017", "Learn tough topics like: 'this', scope, 'new' , hoisting, ES6, & More! Take your JS knowledge to the next level!", "https://udemy-images.udemy.com/course/750x422/59535_1f48_6.jpg", "https://www.udemy.com/advanced-javascript-course/" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 3);
 
 
 
 -- Seeds for JQuery
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("The Complete jQuery Course: From Beginner To Advanced!", "Use jQuery to create stunning animations, provide fast feedback forms, handle all user events and perform Ajax calls.", "https://www.udemy.com/staticx/udemy/images/v6/default-meta-image.png", "https://www.udemy.com/jquery-tutorial/?utm_source=adwords-learn&utm_medium=udemyads&utm_campaign=NEW-AW-PROS-TECH-US-DSA-1-EN-ENG_._ci__._sl_ENG_._vi_TECH_._sd_All_._la_EN_._&utm_content=deal4584&utm_term=_._ag_60674438611_._ad_311050878850_._de_c_._dm__._pl__._ti_aud-296047865446:dsa-304639795903_._li_9032076_._pd__._&gclid=Cj0KCQiAheXiBRD-ARIsAODSpWNUs2CfA1-JALezz5z_-noVQSNwFKXJpzOqK-zB-M8v2oMdfMe4VNYaAlWyEALw_wcB", 4);
+VALUES ("The Complete jQuery Course: From Beginner To Advanced!", "Use jQuery to create stunning animations, provide fast feedback forms, handle all user events and perform Ajax calls.", "https://www.udemy.com/staticx/udemy/images/v6/default-meta-image.png", "https://www.udemy.com/jquery-tutorial", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 4);
 
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("Introduction to jQuery", "Learn the basics of jQuery, a JavaScript library that allows you to easily add dynamic behavior to static web pages.", "https://pentagram-production.imgix.net/1cbbfce1-48d5-4257-95e5-745c10e6492e/eo_codecademy_01.jpg?rect=375%2C0%2C2256%2C1412&w=880&fit=crop&fm=jpg&q=70&auto=format&h=548", "https://www.codecademy.com/learn/learn-jquery", 4);
+VALUES ("Introduction to jQuery", "Learn the basics of jQuery, a JavaScript library that allows you to easily add dynamic behavior to static web pages.", "https://pentagram-production.imgix.net/1cbbfce1-48d5-4257-95e5-745c10e6492e/eo_codecademy_01.jpg?rect=375%2C0%2C2256%2C1412&w=880&fit=crop&fm=jpg&q=70&auto=format&h=548", "https://www.codecademy.com/learn/learn-jquery","2019-01-28 09:00:00", "2019-01-28 09:00:00",  4);
 
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("Intro to jQuery-Manipulating Websites with Ease", "This course will teach you how to use jQuery’s core features - DOM element selections, traversal and manipulation.","https://www.t-systems.com/image/579972/4x3/fc/350/263/f251c799283a15515b4fc7b3558c70e9/jH/im-el-udacity-png.png", "https://www.udacity.com/course/intro-to-jquery--ud245", 4);
+VALUES ("Intro to jQuery-Manipulating Websites with Ease", "This course will teach you how to use jQuery’s core features - DOM element selections, traversal and manipulation.","https://www.t-systems.com/image/579972/4x3/fc/350/263/f251c799283a15515b4fc7b3558c70e9/jH/im-el-udacity-png.png", "https://www.udacity.com/course/intro-to-jquery--ud245", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 4);
 
 
 -- Seeds for TypeScript
@@ -151,7 +151,7 @@ INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, sub
 VALUES ("TypeScript Fundamentals", "The essential introduction to statically typed JavaScript.", "https://raw.githubusercontent.com/remojansen/logo.ts/master/ts.png", "https://typescriptcourses.com/typescript-fundamentals" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 5);
 
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("Understanding TypeScript", "Don't limit the Usage of TypeScript to Angular 2! Learn the Basics, its Features, Workflows and how to use it!", "https://www.udemy.com/staticx/udemy/images/v6/default-meta-image.png", "https://www.udemy.com/understanding-typescript/?ranMID=39197&ranEAID=jU79Zysihs4&ranSiteID=jU79Zysihs4-Vu_6iUxcgzn34KpFQcktbQ&LSNPUBID=jU79Zysihs4" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 5);
+VALUES ("Understanding TypeScript", "Don't limit the Usage of TypeScript to Angular 2! Learn the Basics, its Features, Workflows and how to use it!", "https://www.udemy.com/staticx/udemy/images/v6/default-meta-image.png", "https://www.udemy.com/understanding-typescript/" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 5);
 
 
 -- Seeds for Bootstrap
@@ -162,70 +162,70 @@ INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, sub
 VALUES ("Getting Started with Bootstrap 3", "Create a Minimal Website Layout", "https://realpython.com/static/real-python-placeholder-4.d9524cd39927.jpg", "http://www.realpython.com/blog/design/getting-started-with-bootstrap-3" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 6);
 
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("Bootstrap 4 From Scratch With 5 Projects", "Master the latest version of Bootstrap (4.1.1) and build 5 real world themes while learning HTML5 semantics & CSS3", "https://www.udemy.com/staticx/udemy/images/v6/default-meta-image.png", "https://www.udemy.com/bootstrap-4-from-scratch-with-5-projects/?ranMID=39197&ranEAID=jU79Zysihs4&ranSiteID=jU79Zysihs4-PPg2p7Gucro9diDxDMZjVA&LSNPUBID=jU79Zysihs4" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 6);
+VALUES ("Bootstrap 4 From Scratch With 5 Projects", "Master the latest version of Bootstrap (4.1.1) and build 5 real world themes while learning HTML5 semantics & CSS3", "https://www.udemy.com/staticx/udemy/images/v6/default-meta-image.png", "https://www.udemy.com/bootstrap-4-from-scratch-with-5-projects/" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 6);
 
 
 
 -- Seeds for SASS
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("Sass Basics", "CSS on its own can be fun, but stylesheets are getting larger, more complex, and harder to maintain. This is where a preprocessor can help.", "http://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg", "http://sass-lang.com/tutorial.html", 7);
+VALUES ("Sass Basics", "CSS on its own can be fun, but stylesheets are getting larger, more complex, and harder to maintain. This is where a preprocessor can help.", "http://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg", "http://sass-lang.com/tutorial.html", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 7);
 
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("Advanced CSS and Sass: Flexbox, Grid, Animations and More!", "The most advanced and modern CSS course on the internet: master flexbox, CSS Grid, responsive design, and so much more.", "https://www.udemy.com/staticx/udemy/images/v6/default-meta-image.png", "https://www.udemy.com/advanced-css-and-sass/", 7);
+VALUES ("Advanced CSS and Sass: Flexbox, Grid, Animations and More!", "The most advanced and modern CSS course on the internet: master flexbox, CSS Grid, responsive design, and so much more.", "https://www.udemy.com/staticx/udemy/images/v6/default-meta-image.png", "https://www.udemy.com/advanced-css-and-sass/", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 7);
 
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("The Sass Course! Learn Sass for Real-World Websites", "No B.S. Guide to Learn Sass, Improve Your Workflow and Style Time-Saving, Clean Websites", "https://www.udemy.com/staticx/udemy/images/v6/default-meta-image.png", "https://www.udemy.com/learn-sass/", 7);
+VALUES ("The Sass Course! Learn Sass for Real-World Websites", "No B.S. Guide to Learn Sass, Improve Your Workflow and Style Time-Saving, Clean Websites", "https://www.udemy.com/staticx/udemy/images/v6/default-meta-image.png", "https://www.udemy.com/learn-sass/", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 7);
 
 
 -- Seeds for React
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("Getting Started with React", "This page is an overview of the React documentation and related resources.", "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2000px-React-icon.svg.png", "https://facebook.github.io/react/docs/getting-started.html", 8);
+VALUES ("Getting Started with React", "This page is an overview of the React documentation and related resources.", "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2000px-React-icon.svg.png", "https://facebook.github.io/react/docs/getting-started.html", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 8);
 
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("React Native Express", "Learn React Native, the cross-platform app framework", "http://www.reactnativeexpress.com/fsrn-book@2x.png", "http://www.reactnativeexpress.com/", 8);
+VALUES ("React Native Express", "Learn React Native, the cross-platform app framework", "http://www.reactnativeexpress.com/fsrn-book@2x.png", "http://www.reactnativeexpress.com/", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 8);
 
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("The Complete Guide (incl. React Router & Redux", "The Complete Guide (incl. React Router & Redux)", "Dive in and learn React from scratch! Learn Reactjs, Hooks, Redux, React Routing, Animations, Next.js and way more!", "https://www.udemy.com/staticx/udemy/images/v6/default-meta-image.png", "https://www.udemy.com/react-the-complete-guide-incl-redux/?ranMID=39197&ranEAID=jU79Zysihs4&ranSiteID=jU79Zysihs4-VoyJwVSiL38GadEzYZbeYw&LSNPUBID=jU79Zysihs4", 8);
+VALUES ("The Complete Guide (incl. React Router & Redux", "The Complete Guide (incl. React Router & Redux)", "Dive in and learn React from scratch! Learn Reactjs, Hooks, Redux, React Routing, Animations, Next.js and way more!", "https://www.udemy.com/staticx/udemy/images/v6/default-meta-image.png", "https://www.udemy.com/react-the-complete-guide-incl-redux/", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 8);
 
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("React Crash Course 2018", "React Tutorial with Examples", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0qSA_k1iE99Tf-0gAGSdLbgkUTTM7AdX5OFKGRIQqJbEXXqVA", "https://www.youtube.com/watch?v=Ke90Tje7VS0", 8);
+VALUES ("React Crash Course 2018", "React Tutorial with Examples", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0qSA_k1iE99Tf-0gAGSdLbgkUTTM7AdX5OFKGRIQqJbEXXqVA", "https://www.youtube.com/watch?v=Ke90Tje7VS0", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 8);
 
 
 -- Seeds for Redux
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("Learn Redux", "In 2.5 hours, You'll build 'Reduxstagram' — a simple photo app that will simplify the core ideas behind Redux, React Router and React.js", "https://learnredux.com/images/RDX/share.png", "https://learnredux.com/", 9);
+VALUES ("Learn Redux", "In 2.5 hours, You'll build 'Reduxstagram' — a simple photo app that will simplify the core ideas behind Redux, React Router and React.js", "https://learnredux.com/images/RDX/share.png", "https://learnredux.com/", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 9);
 
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("Redux Blog", "The simplest React Redux tutorial I wish I had when I started learning", "https://www.valentinog.com/blog/wp-content/uploads/2017/12/redux-react-tutorial-beginner-2018.png", "https://www.valentinog.com/blog/redux/", 9);
+VALUES ("Redux Blog", "The simplest React Redux tutorial I wish I had when I started learning", "https://www.valentinog.com/blog/wp-content/uploads/2017/12/redux-react-tutorial-beginner-2018.png", "https://www.valentinog.com/blog/redux/", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 9);
 
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("Getting Started with Redux", "The creator of Redux - will teach you how to manage state in your React application with Redux.", "https://d2eip9sf3oo6c2.cloudfront.net/series/square_covers/000/000/025/full/EGH_Redux-New.png", "https://egghead.io/courses/getting-started-with-redux", 9);
+VALUES ("Getting Started with Redux", "The creator of Redux - will teach you how to manage state in your React application with Redux.", "https://d2eip9sf3oo6c2.cloudfront.net/series/square_covers/000/000/025/full/EGH_Redux-New.png", "https://egghead.io/courses/getting-started-with-redux", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 9);
 
 
 -- Seeds for Angular JS
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("Shaping Up With Angular", "Angular is easy to learn yet powerful enough to help you develop complex single-page web applications. This path includes content covering Angular 2 and beyond.", "https://www.pluralsight.com/content/dam/pluralsight/newsroom/brand-assets/logos/PS_logo_F-11.png", "https://www.pluralsight.com/paths/angular", 10);
+VALUES ("Shaping Up With Angular", "Angular is easy to learn yet powerful enough to help you develop complex single-page web applications. This path includes content covering Angular 2 and beyond.", "https://www.pluralsight.com/content/dam/pluralsight/newsroom/brand-assets/logos/PS_logo_F-11.png", "https://www.pluralsight.com/paths/angular", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 10);
 
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("Learn AngularJS 1.X", "Learn how to easily build single-page web applications using this popular JavaScript framework.", "https://pentagram-production.imgix.net/1cbbfce1-48d5-4257-95e5-745c10e6492e/eo_codecademy_01.jpg?rect=375%2C0%2C2256%2C1412&w=880&fit=crop&fm=jpg&q=70&auto=format&h=548", "https://www.codecademy.com/learn/learn-angularjs", 10);
+VALUES ("Learn AngularJS 1.X", "Learn how to easily build single-page web applications using this popular JavaScript framework.", "https://pentagram-production.imgix.net/1cbbfce1-48d5-4257-95e5-745c10e6492e/eo_codecademy_01.jpg?rect=375%2C0%2C2256%2C1412&w=880&fit=crop&fm=jpg&q=70&auto=format&h=548", "https://www.codecademy.com/learn/learn-angularjs", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 10);
 
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("Angular 7 (formerly Angular 2) - The Complete Guide", "Master Angular (Angular 2+, incl. Angular 7) and build awesome, reactive web apps with the successor of Angular.js", "https://gust-production.s3.amazonaws.com/uploads/startup/logo_image/890575/hackr_20logo_20200_20by_20200.png", "https://hackr.io/tutorial/angular-7-the-complete-guide", 10);
+VALUES ("Angular 7 (formerly Angular 2) - The Complete Guide", "Master Angular (Angular 2+, incl. Angular 7) and build awesome, reactive web apps with the successor of Angular.js", "https://gust-production.s3.amazonaws.com/uploads/startup/logo_image/890575/hackr_20logo_20200_20by_20200.png", "https://hackr.io/tutorial/angular-7-the-complete-guide", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 10);
 
 -- Seeds for Vue
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("Vue Getting Started Guide", "The complete guidebook to Vue.", "https://vuejs.org/images/logo.png", "https://vuejs.org/guide/", 11);
+VALUES ("Vue Getting Started Guide", "The complete guidebook to Vue.", "https://vuejs.org/images/logo.png", "https://vuejs.org/guide/","2019-01-28 09:00:00", "2019-01-28 09:00:00", 11);
 
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("The Net Ninja Vue Tutorial Playlist", "Vue JS 2 Tutorial", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0qSA_k1iE99Tf-0gAGSdLbgkUTTM7AdX5OFKGRIQqJbEXXqVA", "https://www.youtube.com/playlist?list=PL4cUxeGkcC9gQcYgjhBoeQH7wiAyZNrYa", 11);
+VALUES ("The Net Ninja Vue Tutorial Playlist", "Vue JS 2 Tutorial", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0qSA_k1iE99Tf-0gAGSdLbgkUTTM7AdX5OFKGRIQqJbEXXqVA", "https://www.youtube.com/playlist?list=PL4cUxeGkcC9gQcYgjhBoeQH7wiAyZNrYa","2019-01-28 09:00:00", "2019-01-28 09:00:00", 11);
 
 
 -- Seeds for JSON
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("What is JSON?","What It Is, How It Works, & How to Use It", "https://www.copterlabs.com/wp-content/themes/copter-2018/dist/images/logo-copter-white.svg", "http://www.copterlabs.com/blog/json-what-it-is-how-it-works-how-to-use-it/", 12);
+VALUES ("What is JSON?","What It Is, How It Works, & How to Use It", "https://www.copterlabs.com/wp-content/themes/copter-2018/dist/images/logo-copter-white.svg", "http://www.copterlabs.com/blog/json-what-it-is-how-it-works-how-to-use-it/","2019-01-28 09:00:00", "2019-01-28 09:00:00", 12);
 
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("JSON Validator", "Test it out.",  "https://wolfpaulus.com/wp-content/uploads/2016/12/jsonlogo.png", "http://jsonlint.com/", 12);
+VALUES ("JSON Validator", "Test it out.",  "https://wolfpaulus.com/wp-content/uploads/2016/12/jsonlogo.png", "http://jsonlint.com/", "2019-01-28 09:00:00", "2019-01-28 09:00:00",12);
 
 
 -- BACK END LANGUAGES-resources (node, express, react)
@@ -242,13 +242,13 @@ VALUES ("Introduction to NodeJS", "The ultimate beginner guide to creating web a
 
 -- Seeds for Express
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("Learn Express", "Learn how to make back-end apps and APIs using the popular Express.js framework", "https://pentagram-production.imgix.net/1cbbfce1-48d5-4257-95e5-745c10e6492e/eo_codecademy_01.jpg?rect=375%2C0%2C2256%2C1412&w=880&fit=crop&fm=jpg&q=70&auto=format&h=548", "https://blog.prototypr.io/a-little-introduction-to-html-2f82cd9f602c" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 14);
+VALUES ("Learn Express", "Learn how to make back-end apps and APIs using the popular Express.js framework", "https://pentagram-production.imgix.net/1cbbfce1-48d5-4257-95e5-745c10e6492e/eo_codecademy_01.jpg?rect=375%2C0%2C2256%2C1412&w=880&fit=crop&fm=jpg&q=70&auto=format&h=548", "https://www.codecademy.com/learn/learn-express" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 14);
 
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
 VALUES ("Node.js Express FrameWork Tutorial - Learn in 10 Minutes", "Try this", "https://udemy-images.udemy.com/course/750x422/59535_1f48_6.jpg", "https://blog.prototypr.io/a-little-introduction-to-html-2f82cd9f602c" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 14);
 
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("Just Express (with a bunch of node and http). In detail.", "No MERN or MEAN... just Express js. For those who've learned a bit about the most awesome node framework, and want more.", "https://www.udemy.com/staticx/udemy/images/v6/default-meta-image.png", "https://www.udemy.com/just-express-with-a-bunch-of-node-and-http-in-detail/?ranMID=39197&ranEAID=jU79Zysihs4&ranSiteID=jU79Zysihs4-LsykUm_7LEUoZu3i3G2BTg&LSNPUBID=jU79Zysihs4" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 14);
+VALUES ("Just Express (with a bunch of node and http). In detail.", "No MERN or MEAN... just Express js. For those who've learned a bit about the most awesome node framework, and want more.", "https://www.udemy.com/staticx/udemy/images/v6/default-meta-image.png", "https://www.udemy.com/just-express-with-a-bunch-of-node-and-http-in-detail/" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 14);
 
 
 
@@ -263,7 +263,7 @@ INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, sub
 VALUES ("Pip and Virtualenv for Python", "A non-magical introduction to Pip and Virtualenv for Python beginners", "https://static.makeuseof.com/wp-content/uploads/2017/09/HTML-Effects-Featured-670x335.jpg", "https://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 15);
 
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("REST APIs with Flask and Python", "Build professional REST APIs with Python, Flask, Flask-RESTful, and Flask-SQLAlchemy", "https://static.makeuseof.com/wp-content/uploads/2017/09/HTML-Effects-Featured-670x335.jpg", "https://www.udemy.com/rest-api-flask-and-python/?ranMID=39197&ranEAID=EXclnL5BfX4&ranSiteID=EXclnL5BfX4-DcKaawL3dRaO2StPvw4WOA&LSNPUBID=EXclnL5BfX4" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 15);
+VALUES ("REST APIs with Flask and Python", "Build professional REST APIs with Python, Flask, Flask-RESTful, and Flask-SQLAlchemy", "https://static.makeuseof.com/wp-content/uploads/2017/09/HTML-Effects-Featured-670x335.jpg", "https://www.udemy.com/rest-api-flask-and-python/?" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 15);
 
 -- Seeds for Django
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
@@ -275,7 +275,7 @@ VALUES ("Django Tutorial for Beginners", "A course for beginners", "https://i.yt
 
 -- Seeds for Ruby
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("Learn Ruby", "Learn to program in Ruby, a ﬂexible and beginner-friendly language used to create sites like Codecademy.", "https://pentagram-production.imgix.net/1cbbfce1-48d5-4257-95e5-745c10e6492e/eo_codecademy_01.jpg?rect=375%2C0%2C2256%2C1412&w=880&fit=crop&fm=jpg&q=70&auto=format&h=548", "https://www.codecademy.com/learn/learn-ruby" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 17);
+VALUES ("Learn Ruby", "Learn to program in Ruby, a ﬂexible and beginner-friendly language used to create sites like Codecademy.", "https://pentagram-production.imgix.net/1cbbfce1-48d5-4257-95e5-745c10e6492e/eo_codecademy_01.jpg?", "https://www.codecademy.com/learn/learn-ruby" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 17);
 
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
 VALUES ("Ruby on Rails Tutorial", "Learn Web Development with Rails", "https://softcover.s3.amazonaws.com/636/ruby_on_rails_tutorial_4th_edition/images/cover-web.png", "https://www.railstutorial.org/book" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 17);
@@ -286,55 +286,55 @@ VALUES ("Ruby on Rails Web Development Specialization", "Become a Rails Develope
 
 -- Seeds for PHP
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("PHP for Beginners - Become a PHP Master - CMS Project", "PHP for Beginners: learn everything you need to become a professional PHP developer with practical exercises & projects.", "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png", "https://www.udemy.com/php-for-complete-beginners-includes-msql-object-oriented/?ranMID=39197&ranEAID=EXclnL5BfX4&ranSiteID=EXclnL5BfX4-3JuO7knCRnsqv2wuW9.DcA&LSNPUBID=EXclnL5BfX4" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 18);
+VALUES ("PHP for Beginners - Become a PHP Master - CMS Project", "PHP for Beginners: learn everything you need to become a professional PHP developer with practical exercises & projects.", "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png", "https://www.udemy.com/php-for-complete-beginners-includes-msql-object-oriented/" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 18);
 
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
 VALUES ("Make your own blog with PHP", "A small, interactive course to teach beginners the PHP programming language.", "https://static.makeuseof.com/wp-content/uploads/2017/09/HTML-Effects-Featured-670x335.jpg", "https://ilovephp.jondh.me.uk/en/tutorial/make-your-own-blog" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 18);
 
 -- Seeds for JAVA
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("Intro to Programming in Java", "Take your first steps towards becoming a Java developer! Learn Java syntax and create conditional statements, loops, and functions.", "https://www.t-systems.com/image/579972/4x3/fc/350/263/f251c799283a15515b4fc7b3558c70e9/jH/im-el-udacity-png.png", "https://www.udacity.com/course/java-programming-basics--ud282", 19);
+VALUES ("Intro to Programming in Java", "Take your first steps towards becoming a Java developer! Learn Java syntax and create conditional statements, loops, and functions.", "https://www.t-systems.com/image/579972/4x3/fc/350/263/f251c799283a15515b4fc7b3558c70e9/jH/im-el-udacity-png.png", "https://www.udacity.com/course/java-programming-basics--ud282","2019-01-28 09:00:00", "2019-01-28 09:00:00", 19);
 
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("Learn Java", "Learn the basics of the popular Java language in this introductory course.", "https://pentagram-production.imgix.net/1cbbfce1-48d5-4257-95e5-745c10e6492e/eo_codecademy_01.jpg?rect=375%2C0%2C2256%2C1412&w=880&fit=crop&fm=jpg&q=70&auto=format&h=548", "https://www.codecademy.com/learn/learn-java", 19);
+VALUES ("Learn Java", "Learn the basics of the popular Java language in this introductory course.", "https://pentagram-production.imgix.net/1cbbfce1-48d5-4257-95e5-745c10e6492e/eo_codecademy_01.jpg?rect=375%2C0%2C2256%2C1412&w=880&fit=crop&fm=jpg&q=70&auto=format&h=548", "https://www.codecademy.com/learn/learn-java", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 19);
 
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("Java Tutorial for Complete Beginners", "Learn to program using the Java programming language", "https://www.udemy.com/staticx/udemy/images/v6/default-meta-image.png", "https://www.udemy.com/java-tutorial/", 19);
+VALUES ("Java Tutorial for Complete Beginners", "Learn to program using the Java programming language", "https://www.udemy.com/staticx/udemy/images/v6/default-meta-image.png", "https://www.udemy.com/java-tutorial/", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 19);
 
 -- Seeds for Firebase
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("5 Minute Chat Tutorial", "Documentation Overview", "https://firebase.google.com/images/brand-guidelines/logo-standard.png", "https://www.firebase.com/tutorial/#gettingstarted", 20);
+VALUES ("5 Minute Chat Tutorial", "Documentation Overview", "https://firebase.google.com/images/brand-guidelines/logo-standard.png", "https://www.firebase.com/tutorial/#gettingstarted", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 20);
 
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("Firebase Tutorials and Courses", "Learn Firebase online from the best Firebase tutorials & courses voted by the programming community.", "https://gust-production.s3.amazonaws.com/uploads/startup/logo_image/890575/hackr_20logo_20200_20by_20200.png", "https://hackr.io/tutorials/learn-firebase", 20);
+VALUES ("Firebase Tutorials and Courses", "Learn Firebase online from the best Firebase tutorials & courses voted by the programming community.", "https://gust-production.s3.amazonaws.com/uploads/startup/logo_image/890575/hackr_20logo_20200_20by_20200.png", "https://hackr.io/tutorials/learn-firebase", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 20);
 
 
 -- Seeds for Perl
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("Learn Perl 5 By Doing It", "Learn Perl by actually creating useful, working Perl programs for everything from web scraping to fixing your data.", "https://www.udemy.com/staticx/udemy/images/v6/default-meta-image.png", "https://www.udemy.com/perltutorial/", 21);
+VALUES ("Learn Perl 5 By Doing It", "Learn Perl by actually creating useful, working Perl programs for everything from web scraping to fixing your data.", "https://www.udemy.com/staticx/udemy/images/v6/default-meta-image.png", "https://www.udemy.com/perltutorial/", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 21);
 
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("Perl 5 Essential Training", "Learn the basics of Perl syntax, from conditionals, loops, and data structures to regular expressions, functions, and object-oriented programming, and learn how to install and customize Perl scripts.", "https://www.denverlibrary.org/sites/dplorg/files/lynda.jpg", "https://www.lynda.com/Perl-tutorials/Perl-5-Essential-Training/447321-2.html", 21);
+VALUES ("Perl 5 Essential Training", "Learn the basics of Perl syntax, from conditionals, loops, and data structures to regular expressions, functions, and object-oriented programming, and learn how to install and customize Perl scripts.", "https://www.denverlibrary.org/sites/dplorg/files/lynda.jpg", "https://www.lynda.com/Perl-tutorials/Perl-5-Essential-Training/447321-2.html", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 21);
 
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
 VALUES ("Perl Programming for Beginners", "Design a Perl Application.", "https://www.udemy.com/staticx/udemy/images/v6/default-meta-image.png", "https://www.udemy.com/perl-programming-for-beginners/", 21);
 
 -- Seeds for Mongo
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("Learning MongoDB", "A comprehensive guide to MongoDB for ultra-fast, fault tolerant management of big data, including advanced data analysis", "https://www.udemy.com/staticx/udemy/images/v6/default-meta-image.png", "https://www.udemy.com/learning-mongodb2/?utm_source=adwords-learn&utm_medium=udemyads&utm_campaign=NEW-AW-PROS-TECH-US-DSA-1-EN-ENG_._ci__._sl_ENG_._vi_TECH_._sd_All_._la_EN_._&utm_content=deal4584&utm_term=_._ag_60674438811_._ad_311050878862_._de_c_._dm__._pl__._ti_aud-299743148827:dsa-304639795623_._li_9032076_._pd__._&gclid=Cj0KCQiAheXiBRD-ARIsAODSpWOGgY9g_zq6nHMJMch2gFJuAAts13KgPyhZnShM5eaTNRDy1nauWpIaAn8bEALw_wcB", 22);
+VALUES ("Learning MongoDB", "A comprehensive guide to MongoDB for ultra-fast, fault tolerant management of big data, including advanced data analysis", "https://www.udemy.com/staticx/udemy/images/v6/default-meta-image.png", "https://www.udemy.com/learning-mongodb2/", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 22);
 
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("Introduction to MongoDB", "This course will get you up and running with MongoDB quickly, and teach you how to leverage its power for data analytics.", "https://media.glassdoor.com/companyupdate/w300/654749/coursera-companyupdate-1544639211918.jpg", "https://www.coursera.org/learn/introduction-mongodb", 22);
+VALUES ("Introduction to MongoDB", "This course will get you up and running with MongoDB quickly, and teach you how to leverage its power for data analytics.", "https://media.glassdoor.com/companyupdate/w300/654749/coursera-companyupdate-1544639211918.jpg", "https://www.coursera.org/learn/introduction-mongodb", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 22);
 
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("MongoDB Basics", "This course will provide an introduction to MongoDB, Compass (the MongoDB GUI), the MongoDB query language, and Atlas, MongoDB's hosted database as a service", "https://cdn-blog.lawrencemcdaniel.com/wp-content/uploads/2018/02/22125436/open-edx-banner.jpg", "https://www.edx.org/course/mongodb-basics", 22);
+VALUES ("MongoDB Basics", "This course will provide an introduction to MongoDB, Compass (the MongoDB GUI), the MongoDB query language, and Atlas, MongoDB's hosted database as a service", "https://cdn-blog.lawrencemcdaniel.com/wp-content/uploads/2018/02/22125436/open-edx-banner.jpg", "https://www.edx.org/course/mongodb-basics", "2019-01-28 09:00:00", "2019-01-28 09:00:00", 22);
 
 
 
 -- DEV OPS LANGUAGES-resources (C++, Linux, Rust, Go)
 -- Seeds for C++
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
-VALUES ("Advanced C++ Programming Training Course", "Take your C++ Programming Training Course Will Take Your Skills To The Next Level.", "https://www.udemy.com/staticx/udemy/images/v6/default-meta-image.png", "https://www.udemy.com/advanced-c-programming/?utm_source=adwords-learn&utm_medium=udemyads&utm_campaign=NEW-AW-PROS-TECH-US-DSA-1-EN-ENG_._ci__._sl_ENG_._vi_TECH_._sd_All_._la_EN_._&utm_content=deal4584&utm_term=_._ag_60674438611_._ad_311050878850_._de_c_._dm__._pl__._ti_aud-296047865446:dsa-304639795903_._li_9032076_._pd__._&gclid=Cj0KCQiAheXiBRD-ARIsAODSpWPzP2Mqfg5Soq80T4hfKfsj2kVFZZaUhqQz5O8TonYrfsgfJXUvcesaAvlcEALw_wcB" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 23);
+VALUES ("Advanced C++ Programming Training Course", "Take your C++ Programming Training Course Will Take Your Skills To The Next Level.", "https://www.udemy.com/staticx/udemy/images/v6/default-meta-image.png", "https://www.udemy.com/advanced-c-programming/" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 23);
 
 INSERT INTO Resources (name, description, image, link, createdAt, updatedAt, subjectid)
 VALUES ("Learn C++", "Learn one of the most powerful programming languages in the world and become a rockstar developer", "https://pentagram-production.imgix.net/1cbbfce1-48d5-4257-95e5-745c10e6492e/eo_codecademy_01.jpg?rect=375%2C0%2C2256%2C1412&w=880&fit=crop&fm=jpg&q=70&auto=format&h=548", "https://www.codecademy.com/learn/learn-c-plus-plus" , "2019-01-28 09:00:00", "2019-01-28 09:00:00", 23);
